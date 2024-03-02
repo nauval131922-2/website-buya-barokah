@@ -819,7 +819,7 @@ Route::get('/kop-surat', function () {
 Route::get('/jadwal-imsakiyah', function () {
     $data = (object) [
         'url' => 'jadwal-imsakiyah',
-        'judul' => "Jadwal Imsakiyah Ramadhan Tahun 1444 H/2023 M Untuk Wilayah Kabupaten Kudus",
+        'judul' => "Download Jadwal Imsakiyah Ramadhan Tahun 1444 H/2023 M Untuk Wilayah Kabupaten Kudus",
         'judul_2' => "Jadwal Imsakiyah Ramadhan 1444 H/2023 M Untuk Daerah Lainnya",
         'kategori' => "Jadwal Imsakiyah",
 
@@ -863,7 +863,7 @@ Route::get('/jadwal-imsakiyah', function () {
         '10_daerah_nama' => "Yogyakarta",
         '10_daerah_link' => 'assets/pdf/jadwal-imsakiyah/daerah-lain/yogyakarta.pdf',
 
-        'deskripsi' => "Ramadhan adalah bulan suci dalam agama Islam di mana umat muslim berpuasa dari terbit fajar hingga terbenam matahari. Puasa Ramadhan juga menjadi momen untuk meningkatkan ketaqwaan dan memperkuat ikatan dengan Allah SWT. Selain itu, Ramadhan juga merupakan waktu yang tepat untuk berbagi dan saling memberi kepada sesama.\n\nSalah satu hal yang penting dalam menjalankan ibadah puasa Ramadhan adalah mengetahui jadwal imsakiyah. Jadwal imsakiyah adalah jadwal yang menentukan waktu berbuka dan sahur. Berikut adalah jadwal imsakiyah untuk Ramadhan tahun 1444 H/2023 M untuk wilayah kabupaten Kudus.",
+        'deskripsi' => "Ramadhan adalah bulan suci dalam agama Islam di mana umat muslim berpuasa dari terbit fajar hingga terbenam matahari. Puasa Ramadhan juga menjadi momen untuk meningkatkan ketaqwaan dan memperkuat ikatan dengan Allah SWT. Selain itu, Ramadhan juga merupakan waktu yang tepat untuk berbagi dan saling memberi kepada sesama.\n\nSalah satu hal yang penting dalam menjalankan ibadah puasa Ramadhan adalah mengetahui jadwal imsakiyah. Jadwal imsakiyah adalah jadwal yang menentukan waktu berbuka dan sahur. Berikut adalah jadwal imsakiyah yang dapat anda download untuk Ramadhan tahun 1444 H/2023 M di wilayah kabupaten Kudus.",
 
         'deskripsi_2' => "Jadwal imsakiyah dapat berbeda-beda di setiap daerah karena perbedaan letak geografis. Oleh karena itu, penting bagi umat muslim untuk memeriksa jadwal imsakiyah yang sesuai dengan lokasi tempat tinggalnya.\n\nSelain itu, dalam menjalankan ibadah puasa Ramadhan, diperlukan juga kesiapan fisik dan mental. Berpuasa selama sebulan penuh dapat menimbulkan rasa lelah dan menguras energi. Oleh karena itu, penting untuk mengatur pola makan dan aktivitas sehari-hari agar tetap sehat dan bugar selama menjalankan ibadah puasa.\n\nDalam kesempatan yang baik ini, mari kita manfaatkan momentum Ramadhan untuk meningkatkan ketaqwaan dan kebaikan kita. Selamat menjalankan ibadah puasa Ramadhan 1444 H/2023 M. Semoga Allah SWT senantiasa memberikan rahmat dan keberkahan kepada kita semua. Amin.",
 
