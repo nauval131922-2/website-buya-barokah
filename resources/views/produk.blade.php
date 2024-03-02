@@ -21,7 +21,7 @@
     } elseif (strpos(url()->current(), 'kop-surat')) {
         $n = 1;
     } elseif (strpos(url()->current(), 'jadwal-imsakiyah')) {
-        $n = 2;
+        $n = 3;
         $jumlah_daerah = 10;
     } elseif (strpos(url()->current(), 'video-imsakiyah')) {
         $n = 30;
@@ -33,7 +33,7 @@
 
         <main id="main">
 
-            <!-- ======= Breadcrumbs ======= -->
+            <!-- ======= judul paling atas (bawah navbar) ======= -->
             <section id="breadcrumbs" class="breadcrumbs">
                 <div class="container">
 
@@ -51,13 +51,15 @@
                     </div>
 
                 </div>
-            </section><!-- End Breadcrumbs -->
+            </section>
+            <!-- End judul paling atas (bawah navbar) -->
 
 
             <!-- ======= Portfolio Details Section ======= -->
             <section id="portfolio-details" class="portfolio-details">
                 <div class="container" data-aos="fade-up">
 
+                    {{-- gambar preview --}}
                     @if (strpos(url()->current(), 'video-imsakiyah') === false)
                         <div class="portfolio-details-container">
 
@@ -81,8 +83,9 @@
                         </div>
                     @else
                     @endif
+                    {{-- end gambar preview --}}
 
-
+                    {{-- judul dan deskripsi --}}
                     <div class="portfolio-description">
                         @if (strpos(url()->current(), 'jadwal-imsakiyah') == true)
                             <h2 style="width: 100%">{{ $data->judul }}</h2>
@@ -95,8 +98,9 @@
                             {!! nl2br($data->deskripsi) !!}
                         </p>
                     </div>
+                    {{-- end judul dan deskripsi --}}
 
-                    {{-- jika route tidak mengandung jadwal-imsakiyah maka tampilkan jadwal imsakiyah --}}
+                    {{-- card produk --}}
                     @if (strpos(url()->current(), 'video-imsakiyah') == false)
                         <div class="row row-cols-1 row-cols-md-3">
                             @for ($i = 1; $i <= $n; $i++)
@@ -110,6 +114,7 @@
                                                 alt="{{ $data->{$i . '_nama'} }}"
                                                 style="height: 200px; object-fit: cover; object-position: top">
                                         @endif
+
                                         <div class="card-body">
                                             <p class="card-text"><small class="text-muted">{{ $data->kategori }}</small>
                                             </p>
@@ -135,9 +140,11 @@
                         </div>
                     @else
                     @endif
+                    {{-- end card produk --}}
 
+                    {{-- tambahan lainnya (di bawah card produk) --}}
                     @if (strpos(url()->current(), 'jadwal-imsakiyah') == true)
-                        <div class="portfolio-description" style="margin-top: -50px">
+                        {{-- <div class="portfolio-description" style="margin-top: -50px">
                             <p>
                                 {!! nl2br($data->deskripsi_2) !!}
                             </p>
@@ -151,21 +158,63 @@
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th>Nama Daerah</th>
+                                        <th>Model</th>
                                         <th>Link Download</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @for ($i = 1; $i <= $jumlah_daerah; $i++)
+                                    @for ($i = 1; $i <= 3; $i++)
                                         <tr>
-                                            <td>{{ $data->{$i . '_daerah_nama'} }}</td>
-                                            <td><a href="{{ asset($data->{$i . '_daerah_link'}) }}" class=""
+                                            <td>Model {{ $i }}</td>
+                                            <td><a href="{{ asset($data->{$i . '_sekitar_kudus_link'}) }}" class=""
                                                     target="_blank">
                                                     Download</a></td>
                                         </tr>
                                     @endfor
                                 </tbody>
                             </table>
+                        </div> --}}
+
+                        <div class="portfolio-description" style="margin-top: -50px">
+                            <p>
+                                {!! nl2br($data->deskripsi_2) !!}
+                            </p>
+
+                            <h2 style="width: 100%; margin-top: 50px">{{ $data->judul_3 }}</h2>
+
+                            <p>
+                                {!! nl2br($data->deskripsi_4) !!}
+                            </p>
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" style="text-align: center; vertical-align: middle">Nama Daerah</th>
+                                        <th colspan="2" style="text-align: center; vertical-align: middle">Link Download</th>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: center; vertical-align: middle">Model 1</th>
+                                        <th style="text-align: center; vertical-align: middle">Model 2</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @for ($i = 1; $i <= $jumlah_daerah; $i++)
+                                        <tr>
+                                            <td>{{ $data->{$i . '_daerah_nama'} }}</td>
+                                            <td><a href="{{ asset($data->{$i . '_daerah_link_model_1'}) }}" class=""
+                                                    target="_blank">
+                                                    Download</a></td>
+                                            <td><a href="{{ asset($data->{$i . '_daerah_link_model_2'}) }}" class=""
+                                                    target="_blank">
+                                                    Download</a></td>
+                                        </tr>
+                                    @endfor
+                                </tbody>
+                            </table>
+
+                            <p>
+                                {!! nl2br($data->deskripsi_2) !!}
+                            </p>
                         </div>
                     @elseif (strpos(url()->current(), 'video-imsakiyah') == true)
                         <div class="portfolio-description" style="margin-top: -50px">
@@ -185,11 +234,11 @@
                                             <td>Ramadhan-{{ str_pad($i, 2, '0', STR_PAD_LEFT) }}</td>
                                             {{-- jika i kurang dari sama dengan 7 maka tampilkan link download imsakiyyah pagi --}}
                                             {{-- @if ($i <= 7) --}}
-                                                <td><a href="{{ asset($data->{$i . '_video_pagi'}) }}" class=""
-                                                        target="_blank">Download</a>
-                                                </td>
+                                            <td><a href="{{ asset($data->{$i . '_video_pagi'}) }}" class=""
+                                                    target="_blank">Download</a>
+                                            </td>
                                             {{-- @else --}}
-                                                {{-- </td>-</td> --}}
+                                            {{-- </td>-</td> --}}
                                             {{-- @endif --}}
                                             <td><a href="{{ asset($data->{$i . '_video_sore'}) }}" class=""
                                                     target="_blank">Download</a>
@@ -205,6 +254,7 @@
                             </p>
                         </div>
                     @endif
+                    {{-- end tambahan lainnya (di bawah card produk) --}}
 
                 </div>
             </section><!-- End Portfolio Details Section -->

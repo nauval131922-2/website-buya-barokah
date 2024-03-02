@@ -819,55 +819,84 @@ Route::get('/kop-surat', function () {
 Route::get('/jadwal-imsakiyah', function () {
     $data = (object) [
         'url' => 'jadwal-imsakiyah',
-        'judul' => "Download Jadwal Imsakiyah Ramadhan Tahun 1444 H/2023 M Untuk Wilayah Kabupaten Kudus",
-        'judul_2' => "Jadwal Imsakiyah Ramadhan 1444 H/2023 M Untuk Daerah Lainnya",
+        'judul' => "Download Jadwal Imsakiyah Ramadhan Tahun 1445 H/2024 M untuk Wilayah Kabupaten Kudus",
+        'judul_2' => "Download Jadwal Imsakiyah Ramadhan Tahun 1445 H/2024 M untuk Wilayah sekitar Kabupaten Kudus",
+        'judul_3' => "Download Jadwal Imsakiyah Ramadhan 1445 H/2024 M untuk Daerah lainnya",
         'kategori' => "Jadwal Imsakiyah",
 
         '1_nama' => "Jadwal Imsakiyah Model 1",
-        '1_gambar' => 'assets/images/jadwal-imsakiyah/jadwal-imsakiyah-model-1.jpg',
-        '1_pdf' => 'assets/pdf/jadwal-imsakiyah/jadwal-imsakiyah-model-1.pdf',
+        '1_gambar' => 'assets/images/jadwal-imsakiyah/1445 H/kota kudus/min/webp/1.webp',
+        '1_pdf' => 'assets/pdf/jadwal-imsakiyah/1445 H/kota kudus/1.pdf',
         '1_deskripsi' => "Merupakan salah satu jenis jadwal imsakiyah.",
 
         '2_nama' => "Jadwal Imsakiyah Model 2",
-        '2_gambar' => 'assets/images/jadwal-imsakiyah/jadwal-imsakiyah-model-2.jpg',
-        '2_pdf' => 'assets/pdf/jadwal-imsakiyah/jadwal-imsakiyah-model-2.pdf',
+        '2_gambar' => 'assets/images/jadwal-imsakiyah/1445 H/kota kudus/min/webp/2.webp',
+        '2_pdf' => 'assets/pdf/jadwal-imsakiyah/1445 H/kota kudus/2.pdf',
         '2_deskripsi' => "Merupakan salah satu jenis jadwal imsakiyah.",
 
+        '3_nama' => "Jadwal Imsakiyah Model 3",
+        '3_gambar' => 'assets/images/jadwal-imsakiyah/1445 H/kota kudus/min/webp/3.webp',
+        '3_pdf' => 'assets/pdf/jadwal-imsakiyah/1445 H/kota kudus/3.pdf',
+        '3_deskripsi' => "Merupakan salah satu jenis jadwal imsakiyah.",
+
+        '4_nama' => "Jadwal Imsakiyah Model 4",
+        '4_gambar' => 'assets/images/jadwal-imsakiyah/1445 H/kota kudus/min/webp/4.webp',
+        '4_pdf' => 'assets/pdf/jadwal-imsakiyah/1445 H/kota kudus/4.pdf',
+        '4_deskripsi' => "Merupakan salah satu jenis jadwal imsakiyah.",
+
         '1_daerah_nama' => "Demak",
-        '1_daerah_link' => 'assets/pdf/jadwal-imsakiyah/daerah-lain/demak.pdf',
+        '1_daerah_link_model_1' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 1/Demak.pdf',
+        '1_daerah_link_model_2' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 2/Demak.pdf',
 
         '2_daerah_nama' => "Grobogan",
-        '2_daerah_link' => 'assets/pdf/jadwal-imsakiyah/daerah-lain/grobogan.pdf',
+        '2_daerah_link_model_1' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 1/Grobogan.pdf',
+        '2_daerah_link_model_2' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 2/Grobogan.pdf',
 
         '3_daerah_nama' => "Jakarta",
-        '3_daerah_link' => 'assets/pdf/jadwal-imsakiyah/daerah-lain/jakarta.pdf',
+        '3_daerah_link_model_1' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 1/Jakarta.pdf',
+        '3_daerah_link_model_2' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 2/Jakarta.pdf',
 
         '4_daerah_nama' => "Jepara",
-        '4_daerah_link' => 'assets/pdf/jadwal-imsakiyah/daerah-lain/jepara.pdf',
+        '4_daerah_link_model_1' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 1/Jepara.pdf',
+        '4_daerah_link_model_2' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 2/Jepara.pdf',
 
         '5_daerah_nama' => "Kendal",
-        '5_daerah_link' => 'assets/pdf/jadwal-imsakiyah/daerah-lain/kendal.pdf',
+        '5_daerah_link_model_1' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 1/Kendal.pdf',
+        '5_daerah_link_model_2' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 2/Kendal.pdf',
 
         '6_daerah_nama' => "Pati",
-        '6_daerah_link' => 'assets/pdf/jadwal-imsakiyah/daerah-lain/pati.pdf',
+        '6_daerah_link_model_1' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 1/Pati.pdf',
+        '6_daerah_link_model_2' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 2/Pati.pdf',
 
         '7_daerah_nama' => "Rembang",
-        '7_daerah_link' => 'assets/pdf/jadwal-imsakiyah/daerah-lain/rembang.pdf',
+        '7_daerah_link_model_1' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 1/Rembang.pdf',
+        '7_daerah_link_model_2' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 2/Rembang.pdf',
 
         '8_daerah_nama' => "Semarang",
-        '8_daerah_link' => 'assets/pdf/jadwal-imsakiyah/daerah-lain/semarang.pdf',
+        '8_daerah_link_model_1' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 1/Semarang.pdf',
+        '8_daerah_link_model_2' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 2/Semarang.pdf',
 
         '9_daerah_nama' => "Surabaya",
-        '9_daerah_link' => 'assets/pdf/jadwal-imsakiyah/daerah-lain/surabaya.pdf',
+        '9_daerah_link_model_1' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 1/Surabaya.pdf',
+        '9_daerah_link_model_2' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 2/Surabaya.pdf',
 
         '10_daerah_nama' => "Yogyakarta",
-        '10_daerah_link' => 'assets/pdf/jadwal-imsakiyah/daerah-lain/yogyakarta.pdf',
+        '10_daerah_link_model_1' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 1/Yogyakarta.pdf',
+        '10_daerah_link_model_2' => 'assets/pdf/jadwal-imsakiyah/1445 H/seluruh indonesia/model 2/Yogyakarta.pdf',
 
-        'deskripsi' => "Ramadhan adalah bulan suci dalam agama Islam di mana umat muslim berpuasa dari terbit fajar hingga terbenam matahari. Puasa Ramadhan juga menjadi momen untuk meningkatkan ketaqwaan dan memperkuat ikatan dengan Allah SWT. Selain itu, Ramadhan juga merupakan waktu yang tepat untuk berbagi dan saling memberi kepada sesama.\n\nSalah satu hal yang penting dalam menjalankan ibadah puasa Ramadhan adalah mengetahui jadwal imsakiyah. Jadwal imsakiyah adalah jadwal yang menentukan waktu berbuka dan sahur. Berikut adalah jadwal imsakiyah yang dapat anda download untuk Ramadhan tahun 1444 H/2023 M di wilayah kabupaten Kudus.",
+        '1_sekitar_kudus_link' => 'assets/pdf/jadwal-imsakiyah/1445 H/kota sekitar kudus/1.pdf',
 
-        'deskripsi_2' => "Jadwal imsakiyah dapat berbeda-beda di setiap daerah karena perbedaan letak geografis. Oleh karena itu, penting bagi umat muslim untuk memeriksa jadwal imsakiyah yang sesuai dengan lokasi tempat tinggalnya.\n\nSelain itu, dalam menjalankan ibadah puasa Ramadhan, diperlukan juga kesiapan fisik dan mental. Berpuasa selama sebulan penuh dapat menimbulkan rasa lelah dan menguras energi. Oleh karena itu, penting untuk mengatur pola makan dan aktivitas sehari-hari agar tetap sehat dan bugar selama menjalankan ibadah puasa.\n\nDalam kesempatan yang baik ini, mari kita manfaatkan momentum Ramadhan untuk meningkatkan ketaqwaan dan kebaikan kita. Selamat menjalankan ibadah puasa Ramadhan 1444 H/2023 M. Semoga Allah SWT senantiasa memberikan rahmat dan keberkahan kepada kita semua. Amin.",
+        '2_sekitar_kudus_link' => 'assets/pdf/jadwal-imsakiyah/1445 H/kota sekitar kudus/2.pdf',
 
-        'deskripsi_3' => "Selain daerah kudus, kami juga meneyediakan jadwal imsakiyah untuk beberapa daerah yang bisa di download secara GRATIS, antara lain:",
+        '3_sekitar_kudus_link' => 'assets/pdf/jadwal-imsakiyah/1445 H/kota sekitar kudus/3.pdf',
+
+        'deskripsi' => "Ramadhan adalah bulan suci dalam agama Islam di mana umat muslim berpuasa dari terbit fajar hingga terbenam matahari. Puasa Ramadhan juga menjadi momen untuk meningkatkan ketaqwaan dan memperkuat ikatan dengan Allah SWT. Selain itu, Ramadhan juga merupakan waktu yang tepat untuk berbagi dan saling memberi kepada sesama.\n\nSalah satu hal yang penting dalam menjalankan ibadah puasa Ramadhan adalah mengetahui jadwal imsakiyah. Jadwal imsakiyah adalah jadwal yang menentukan waktu berbuka dan sahur. Berikut adalah jadwal imsakiyah yang dapat anda download untuk Ramadhan tahun 1445 H/2024 M di wilayah kabupaten Kudus.",
+
+        'deskripsi_2' => "Jadwal imsakiyah dapat berbeda-beda di setiap daerah karena perbedaan letak geografis. Oleh karena itu, penting bagi umat muslim untuk memeriksa jadwal imsakiyah yang sesuai dengan lokasi tempat tinggalnya.\n\nSelain itu, dalam menjalankan ibadah puasa Ramadhan, diperlukan juga kesiapan fisik dan mental. Berpuasa selama sebulan penuh dapat menimbulkan rasa lelah dan menguras energi. Oleh karena itu, penting untuk mengatur pola makan dan aktivitas sehari-hari agar tetap sehat dan bugar selama menjalankan ibadah puasa.\n\nDalam kesempatan yang baik ini, mari kita manfaatkan momentum Ramadhan untuk meningkatkan ketaqwaan dan kebaikan kita. Selamat menjalankan ibadah puasa Ramadhan 1445 H/2024 M. Semoga Allah SWT senantiasa memberikan rahmat dan keberkahan kepada kita semua. Amin.",
+
+        'deskripsi_3' => "Selain daerah kudus, kami juga meneyediakan jadwal imsakiyah untuk wilayah sekitar Kabupaten Kudus yang bisa di download secara GRATIS, antara lain:",
+
+        'deskripsi_4' => "Kami juga meneyediakan jadwal imsakiyah untuk beberapa daerah yang bisa didownload secara GRATIS, antara lain:",
     ];
 
     return view('produk', compact('data'));
