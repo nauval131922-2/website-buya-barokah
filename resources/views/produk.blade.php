@@ -279,11 +279,14 @@
 
         </main><!-- End #main -->
 
-        <p class="visit-counter">
-            <i class='bx bx-stats'></i>
-            <strong>Jumlah kunjungan:</strong>
-            <span>{{ $visit_count }}</span>
-        </p>
+        @if (strpos(url()->current(), 'jadwal-imsakiyah') == true || strpos(url()->current(), 'video-imsakiyah') == true)
+            <p class="visit-counter">
+                <i class='bx bx-stats'></i>
+                <strong>Jumlah kunjungan:</strong>
+                <span>{{ $visit_count }}</span>
+            </p>
+        @endif
+
 
     </body>
 @endsection

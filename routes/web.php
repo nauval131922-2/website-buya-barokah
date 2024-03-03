@@ -1083,7 +1083,15 @@ Route::get('/video-imsakiyah', function () {
         'deskripsi_2' => "Jadwal imsakiyah dapat berbeda-beda di setiap daerah karena perbedaan letak geografis. Oleh karena itu, penting bagi umat muslim untuk memeriksa jadwal imsakiyah yang sesuai dengan lokasi tempat tinggalnya.\n\nSelain itu, dalam menjalankan ibadah puasa Ramadhan, diperlukan juga kesiapan fisik dan mental. Berpuasa selama sebulan penuh dapat menimbulkan rasa lelah dan menguras energi. Oleh karena itu, penting untuk mengatur pola makan dan aktivitas sehari-hari agar tetap sehat dan bugar selama menjalankan ibadah puasa.\n\nDalam kesempatan yang baik ini, mari kita manfaatkan momentum Ramadhan untuk meningkatkan ketaqwaan dan kebaikan kita. Selamat menjalankan ibadah puasa Ramadhan 1444 H/2023 M. Semoga Allah SWT senantiasa memberikan rahmat dan keberkahan kepada kita semua. Amin.",
     ];
 
-    return view('produk', compact('data'));
+    $page = 'video-imsakiyah'; // Ganti dengan halaman yang sesuai
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.video-imsakiyah'); // resources/views/products/video-imsakiyah.blade.php
 
 // navbar jasa cetak
