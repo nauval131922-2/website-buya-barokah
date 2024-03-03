@@ -29,6 +29,53 @@
     }
     ?>
 
+    <style>
+        .visit-counter {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #1bbd36;
+            /* Warna latar belakang */
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .visit-counter:hover {
+            transform: translateY(-50%) scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .visit-counter strong {
+            display: none;
+        }
+
+        .visit-counter:hover .bx-stats {
+            display: none;
+            /* Menyembunyikan logo saat dihover */
+        }
+
+        .visit-counter:hover strong,
+        .visit-counter:hover span {
+            display: inline-block;
+        }
+
+        .visit-counter span {
+            font-weight: bold;
+            /* Membuat teks pada elemen span menjadi tebal */
+        }
+
+        .visit-counter .bx-stats {
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    </style>
+
+
+
     <body>
 
         <main id="main">
@@ -144,37 +191,6 @@
 
                     {{-- tambahan lainnya (di bawah card produk) --}}
                     @if (strpos(url()->current(), 'jadwal-imsakiyah') == true)
-                        {{-- <div class="portfolio-description" style="margin-top: -50px">
-                            <p>
-                                {!! nl2br($data->deskripsi_2) !!}
-                            </p>
-
-                            <h2 style="width: 100%; margin-top: 50px">{{ $data->judul_2 }}</h2>
-
-                            <p>
-                                {!! nl2br($data->deskripsi_3) !!}
-                            </p>
-
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Model</th>
-                                        <th>Link Download</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @for ($i = 1; $i <= 3; $i++)
-                                        <tr>
-                                            <td>Model {{ $i }}</td>
-                                            <td><a href="{{ asset($data->{$i . '_sekitar_kudus_link'}) }}" class=""
-                                                    target="_blank">
-                                                    Download</a></td>
-                                        </tr>
-                                    @endfor
-                                </tbody>
-                            </table>
-                        </div> --}}
-
                         <div class="portfolio-description" style="margin-top: -50px">
                             <p>
                                 {!! nl2br($data->deskripsi_2) !!}
@@ -189,8 +205,10 @@
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th rowspan="2" style="text-align: center; vertical-align: middle">Nama Daerah</th>
-                                        <th colspan="2" style="text-align: center; vertical-align: middle">Link Download</th>
+                                        <th rowspan="2" style="text-align: center; vertical-align: middle">Nama Daerah
+                                        </th>
+                                        <th colspan="2" style="text-align: center; vertical-align: middle">Link Download
+                                        </th>
                                     </tr>
                                     <tr>
                                         <th style="text-align: center; vertical-align: middle">Model 1</th>
@@ -260,6 +278,12 @@
             </section><!-- End Portfolio Details Section -->
 
         </main><!-- End #main -->
+
+        <p class="visit-counter">
+            <i class='bx bx-stats'></i>
+            <strong>Jumlah kunjungan:</strong>
+            <span>{{ $visit_count }}</span>
+        </p>
 
     </body>
 @endsection
