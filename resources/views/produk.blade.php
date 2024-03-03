@@ -32,19 +32,23 @@
     <style>
         .visit-counter {
             position: fixed;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
+            bottom: 15px;
+            /* Ubah posisi ke bawah */
+            left: 15px;
+            font-size: 12px;
+            /* Ukuran font kecilkan */
             background-color: #1bbd36;
-            /* Warna latar belakang */
             color: #fff;
-            padding: 10px;
+            padding: 5px 8px;
+            /* Sesuaikan padding */
             border-radius: 5px;
             transition: transform 0.3s ease;
+            margin-bottom: 0;
         }
 
         .visit-counter:hover {
-            transform: translateY(-50%) scale(1.05);
+            transform: translateY(0) scale(1.05);
+            /* Ubah transform */
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
@@ -54,7 +58,6 @@
 
         .visit-counter:hover .bx-stats {
             display: none;
-            /* Menyembunyikan logo saat dihover */
         }
 
         .visit-counter:hover strong,
@@ -64,13 +67,29 @@
 
         .visit-counter span {
             font-weight: bold;
-            /* Membuat teks pada elemen span menjadi tebal */
         }
 
         .visit-counter .bx-stats {
             display: inline-block;
-            font-size: 20px;
-            margin-right: 10px;
+            font-size: 16px;
+            /* Sesuaikan ukuran font */
+            margin-right: 5px;
+            /* Sesuaikan margin */
+        }
+
+        .visit-counter .actual-count {
+            display: none;
+            /* Sembunyikan nilai sebenarnya */
+        }
+
+        .visit-counter:hover .actual-count {
+            display: inline-block;
+            /* Tampilkan nilai sebenarnya saat dihover */
+        }
+
+        .visit-counter:hover .plus-sign {
+            display: none;
+            /* Sembunyikan tanda + saat dihover */
         }
     </style>
 
@@ -279,11 +298,20 @@
 
         </main><!-- End #main -->
 
-        @if (strpos(url()->current(), 'jadwal-imsakiyah') == true || strpos(url()->current(), 'video-imsakiyah') == true)
+        @if (strpos(url()->current(), 'jadwal-imsakiyah') !== false || strpos(url()->current(), 'video-imsakiyah') !== false)
             <p class="visit-counter">
                 <i class='bx bx-stats'></i>
                 <strong>Jumlah kunjungan:</strong>
-                <span>{{ $visit_count }}</span>
+                <span class="plus-sign">
+                    @if ($visit_count > 99)
+                        99+
+                    @else
+                        {{ $visit_count }}
+                    @endif
+                </span>
+                <span class="actual-count">
+                    {{ $visit_count }}
+                </span>
             </p>
         @endif
 
