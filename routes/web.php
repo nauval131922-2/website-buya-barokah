@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\ViewCount;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -899,7 +900,23 @@ Route::get('/jadwal-imsakiyah', function () {
         'deskripsi_4' => "Kami juga meneyediakan jadwal imsakiyah untuk beberapa daerah yang bisa didownload secara GRATIS, antara lain:",
     ];
 
-    return view('produk', compact('data'));
+
+    $page = 'jadwal-imsakiyah'; // Ganti dengan halaman yang sesuai
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    // Kemudian Anda akan mengirimkan nilai visit_count ini bersama dengan data lain yang ingin Anda tampilkan di halaman tersebut
+    // return view('produk', ['data' => $data, 'visit_count' => $visitor->visit_count]);
+
+
+
+
+
+    return view('produk', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.jadwal-imsakiyah'); // resources/views/products/jadwal-imsakiyah.blade.php
 
 // navbar video imsakiyah
