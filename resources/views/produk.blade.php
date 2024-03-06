@@ -326,25 +326,32 @@
                             <table class="table table-striped" style="margin-top: -20px">
                                 <thead>
                                     <tr>
-                                        <th>Ramadhan</th>
-                                        <th>Download Imsakiyyah Pagi</th>
-                                        <th>Download Imsakiyyah Petang</th>
+                                        <th rowspan="2" style="text-align: center; vertical-align: middle">Ramadhan</th>
+                                        <th colspan="2" style="text-align: center; vertical-align: middle">Link Preview</th>
+                                        <th colspan="2" style="text-align: center; vertical-align: middle">Link Download</th>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: center; vertical-align: middle">480p</th>
+                                        <th style="text-align: center; vertical-align: middle">720p</th>
+                                        <th style="text-align: center; vertical-align: middle">480p</th>
+                                        <th style="text-align: center; vertical-align: middle">720p</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @for ($i = 1; $i <= $jumlah_hari; $i++)
                                         <tr>
                                             <td>Ramadhan-{{ str_pad($i, 2, '0', STR_PAD_LEFT) }}</td>
-                                            {{-- jika i kurang dari sama dengan 7 maka tampilkan link download imsakiyyah pagi --}}
-                                            {{-- @if ($i <= 7) --}}
-                                            <td><a href="{{ asset($data->{$i . '_video_pagi'}) }}" class=""
+                                            <td><a href="{{ asset($data->{$i . '_link_preview_480p'}) }}" class=""
+                                                    target="_blank">Preview</a>
+                                            </td>
+                                            <td><a href="{{ asset($data->{$i . '_link_preview_720p'}) }}" class=""
+                                                    target="_blank">Preview</a>
+                                            <td><a href="{{ asset($data->{$i . '_link_download_480p'}) }}" class=""
                                                     target="_blank">Download</a>
                                             </td>
-                                            {{-- @else --}}
-                                            {{-- </td>-</td> --}}
-                                            {{-- @endif --}}
-                                            <td><a href="{{ asset($data->{$i . '_video_sore'}) }}" class=""
+                                            <td><a href="{{ asset($data->{$i . '_link_download_720p'}) }}" class=""
                                                     target="_blank">Download</a>
+                                            </td>
                                             </td>
                                         </tr>
                                     @endfor
