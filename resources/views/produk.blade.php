@@ -326,32 +326,34 @@
                             <table class="table table-striped" style="margin-top: -20px">
                                 <thead>
                                     <tr>
-                                        <th rowspan="2" style="text-align: center; vertical-align: middle">Ramadhan</th>
+                                        {{-- <th rowspan="2" style="text-align: center; vertical-align: middle">Ramadhan</th>
                                         <th colspan="2" style="text-align: center; vertical-align: middle">Link Preview</th>
-                                        <th colspan="2" style="text-align: center; vertical-align: middle">Link Download</th>
+                                        <th colspan="2" style="text-align: center; vertical-align: middle">Link Download</th> --}}
+                                        <th >Ramadhan</th>
+                                        <th >Link Download</th>
                                     </tr>
-                                    <tr>
+                                    {{-- <tr>
                                         <th style="text-align: center; vertical-align: middle">480p</th>
                                         <th style="text-align: center; vertical-align: middle">720p</th>
                                         <th style="text-align: center; vertical-align: middle">480p</th>
                                         <th style="text-align: center; vertical-align: middle">720p</th>
-                                    </tr>
+                                    </tr> --}}
                                 </thead>
                                 <tbody>
                                     @for ($i = 1; $i <= $jumlah_hari; $i++)
                                         <tr>
                                             <td>Ramadhan-{{ str_pad($i, 2, '0', STR_PAD_LEFT) }}</td>
-                                            <td><a href="{{ asset($data->{$i . '_link_preview_480p'}) }}" class=""
+                                            {{-- <td><a href="{{ asset($data->{$i . '_link_preview_480p'}) }}" class=""
                                                     target="_blank">Preview</a>
                                             </td>
                                             <td><a href="{{ asset($data->{$i . '_link_preview_720p'}) }}" class=""
-                                                    target="_blank">Preview</a>
+                                                    target="_blank">Preview</a> --}}
                                             <td><a href="{{ asset($data->{$i . '_link_download_480p'}) }}" class=""
                                                     target="_blank">Download</a>
                                             </td>
-                                            <td><a href="{{ asset($data->{$i . '_link_download_720p'}) }}" class=""
+                                            {{-- <td><a href="{{ asset($data->{$i . '_link_download_720p'}) }}" class=""
                                                     target="_blank">Download</a>
-                                            </td>
+                                            </td> --}}
                                             </td>
                                         </tr>
                                     @endfor
@@ -394,9 +396,8 @@
                 <h2><i class='bx bx-video bx-flashing'></i> Video Imsakiyah Hari Ini</h2>
 
                 @for ($i = 1; $i <= $jumlah_link_preview; $i++)
-                    {{-- jika tanggal hari ini = $i . '_tanggal' maka tampilkan link preview, jika tidak maka lanjut ke $i+1 . '_tanggal' --}}
                     @if (date('Y-m-d') == $data->{$i . '_tanggal'})
-                        <iframe width="250" height="400" src="{{ asset($data->{$i . '_link_preview'}) }}" frameborder="0"
+                        <iframe width="225" height="400" src="{{ asset($data->{$i . '_link_preview_480p'}) }}" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
                     @else
                         @continue
