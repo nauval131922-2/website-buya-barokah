@@ -928,7 +928,7 @@ Route::get('/video-imsakiyah', function () {
         '1_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-1.mp4',
         '1_video_pagi' => 'assets/video/jadwal-imsakiyah/kudus/pagi/pagi-1.mp4',
         '1_deskripsi' => "Merupakan salah satu jenis video imsakiyah.",
-        '1_link_preview_480p' => "https://drive.google.com/file/d/1FNDS-4TFXmPHVD_tkUexZQMutHLUCpYK/previe",
+        '1_link_preview_480p' => "https://drive.google.com/file/d/1FNDS-4TFXmPHVD_tkUexZQMutHLUCpYK/preview",
         '1_link_preview_720p' => "https://drive.google.com/file/d/1b1L-_4AoQPsNtPIoVChm90rKrH74LZIH/preview",
         '1_link_download_480p' => "https://drive.google.com/file/d/1FNDS-4TFXmPHVD_tkUexZQMutHLUCpYK/view",
         '1_link_download_720p' => "https://drive.google.com/file/d/1b1L-_4AoQPsNtPIoVChm90rKrH74LZIH/view",
