@@ -962,7 +962,7 @@ Route::get('/video-imsakiyah', function () {
         '4_link_preview_720p' => "",
         '4_link_download_480p' => "",
         '4_link_download_720p' => "",
-        '4_tanggal' => "",
+        '4_tanggal' => "2024-03-15",
 
         '5_nama' => "Video Imsakiyah 5",
         '5_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-5.mp4',
@@ -972,7 +972,7 @@ Route::get('/video-imsakiyah', function () {
         '5_link_preview_720p' => "",
         '5_link_download_480p' => "",
         '5_link_download_720p' => "",
-        '5_tanggal' => "",
+        '5_tanggal' => "2024-03-16",
 
         '6_nama' => "Video Imsakiyah 6",
         '6_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-6.mp4',
@@ -982,7 +982,7 @@ Route::get('/video-imsakiyah', function () {
         '6_link_preview_720p' => "",
         '6_link_download_480p' => "",
         '6_link_download_720p' => "",
-        '6_tanggal' => "",
+        '6_tanggal' => "2024-03-17",
 
         '7_nama' => "Video Imsakiyah 7",
         '7_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-7.mp4',
@@ -992,7 +992,7 @@ Route::get('/video-imsakiyah', function () {
         '7_link_preview_720p' => "",
         '7_link_download_480p' => "",
         '7_link_download_720p' => "",
-        '7_tanggal' => "",
+        '7_tanggal' => "2024-03-18",
 
         '8_nama' => "Video Imsakiyah 8",
         '8_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-8.mp4',
@@ -1002,7 +1002,7 @@ Route::get('/video-imsakiyah', function () {
         '8_link_preview_720p' => "",
         '8_link_download_480p' => "",
         '8_link_download_720p' => "",
-        '8_tanggal' => "",
+        '8_tanggal' => "2024-03-19",
 
         '9_nama' => "Video Imsakiyah 9",
         '9_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-9.mp4',
@@ -1012,7 +1012,7 @@ Route::get('/video-imsakiyah', function () {
         '9_link_preview_720p' => "",
         '9_link_download_480p' => "",
         '9_link_download_720p' => "",
-        '9_tanggal' => "",
+        '9_tanggal' => "2024-03-20",
 
         '10_nama' => "Video Imsakiyah 10",
         '10_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-10.mp4',
@@ -1022,7 +1022,7 @@ Route::get('/video-imsakiyah', function () {
         '10_link_preview_720p' => "",
         '10_link_download_480p' => "",
         '10_link_download_720p' => "",
-        '10_tanggal' => "",
+        '10_tanggal' => "2024-03-21",
 
         '11_nama' => "Video Imsakiyah 11",
         '11_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-11.mp4',
@@ -1032,7 +1032,7 @@ Route::get('/video-imsakiyah', function () {
         '11_link_preview_720p' => "",
         '11_link_download_480p' => "",
         '11_link_download_720p' => "",
-        '11_tanggal' => "",
+        '11_tanggal' => "2024-03-22",
 
         '12_nama' => "Video Imsakiyah 12",
         '12_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-12.mp4',
@@ -1042,7 +1042,7 @@ Route::get('/video-imsakiyah', function () {
         '12_link_preview_720p' => "",
         '12_link_download_480p' => "",
         '12_link_download_720p' => "",
-        '12_tanggal' => "",
+        '12_tanggal' => "2024-03-23",
 
         '13_nama' => "Video Imsakiyah 13",
         '13_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-13.mp4',
@@ -1052,7 +1052,7 @@ Route::get('/video-imsakiyah', function () {
         '13_link_preview_720p' => "",
         '13_link_download_480p' => "",
         '13_link_download_720p' => "",
-        '13_tanggal' => "",
+        '13_tanggal' => "2024-03-24",
 
         '14_nama' => "Video Imsakiyah 14",
         '14_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-14.mp4',
@@ -1062,7 +1062,7 @@ Route::get('/video-imsakiyah', function () {
         '14_link_preview_720p' => "",
         '14_link_download_480p' => "",
         '14_link_download_720p' => "",
-        '14_tanggal' => "",
+        '14_tanggal' => "2024-03-25",
 
         '15_nama' => "Video Imsakiyah 15",
         '15_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-15.mp4',
@@ -1072,7 +1072,7 @@ Route::get('/video-imsakiyah', function () {
         '15_link_preview_720p' => "",
         '15_link_download_480p' => "",
         '15_link_download_720p' => "",
-        '15_tanggal' => "",
+        '15_tanggal' => "2024-03-26",
 
         '16_nama' => "Video Imsakiyah 16",
         '16_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-16.mp4',
@@ -1082,7 +1082,7 @@ Route::get('/video-imsakiyah', function () {
         '16_link_preview_720p' => "",
         '16_link_download_480p' => "",
         '16_link_download_720p' => "",
-        '16_tanggal' => "",
+        '16_tanggal' => "2024-03-27",
 
         '17_nama' => "Video Imsakiyah 17",
         '17_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-17.mp4',
@@ -1092,7 +1092,7 @@ Route::get('/video-imsakiyah', function () {
         '17_link_preview_720p' => "",
         '17_link_download_480p' => "",
         '17_link_download_720p' => "",
-        '17_tanggal' => "",
+        '17_tanggal' => "2024-03-28",
 
         '18_nama' => "Video Imsakiyah 18",
         '18_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-18.mp4',
@@ -1102,7 +1102,7 @@ Route::get('/video-imsakiyah', function () {
         '18_link_preview_720p' => "",
         '18_link_download_480p' => "",
         '18_link_download_720p' => "",
-        '18_tanggal' => "",
+        '18_tanggal' => "2024-03-29",
 
         '19_nama' => "Video Imsakiyah 19",
         '19_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-19.mp4',
@@ -1112,7 +1112,7 @@ Route::get('/video-imsakiyah', function () {
         '19_link_preview_720p' => "",
         '19_link_download_480p' => "",
         '19_link_download_720p' => "",
-        '19_tanggal' => "",
+        '19_tanggal' => "2024-03-30",
 
         '20_nama' => "Video Imsakiyah 20",
         '20_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-20.mp4',
@@ -1122,7 +1122,7 @@ Route::get('/video-imsakiyah', function () {
         '20_link_preview_720p' => "",
         '20_link_download_480p' => "",
         '20_link_download_720p' => "",
-        '20_tanggal' => "",
+        '20_tanggal' => "2024-03-31",
 
         '21_nama' => "Video Imsakiyah 21",
         '21_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-21.mp4',
@@ -1132,7 +1132,7 @@ Route::get('/video-imsakiyah', function () {
         '21_link_preview_720p' => "",
         '21_link_download_480p' => "",
         '21_link_download_720p' => "",
-        '21_tanggal' => "",
+        '21_tanggal' => "2024-04-01",
 
         '22_nama' => "Video Imsakiyah 22",
         '22_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-22.mp4',
@@ -1142,7 +1142,7 @@ Route::get('/video-imsakiyah', function () {
         '22_link_preview_720p' => "",
         '22_link_download_480p' => "",
         '22_link_download_720p' => "",
-        '22_tanggal' => "",
+        '22_tanggal' => "2024-04-02",
 
         '23_nama' => "Video Imsakiyah 23",
         '23_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-23.mp4',
@@ -1152,7 +1152,7 @@ Route::get('/video-imsakiyah', function () {
         '23_link_preview_720p' => "",
         '23_link_download_480p' => "",
         '23_link_download_720p' => "",
-        '23_tanggal' => "",
+        '23_tanggal' => "2024-04-03",
 
         '24_nama' => "Video Imsakiyah 24",
         '24_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-24.mp4',
@@ -1162,7 +1162,7 @@ Route::get('/video-imsakiyah', function () {
         '24_link_preview_720p' => "",
         '24_link_download_480p' => "",
         '24_link_download_720p' => "",
-        '24_tanggal' => "",
+        '24_tanggal' => "2024-04-04",
 
         '25_nama' => "Video Imsakiyah 25",
         '25_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-25.mp4',
@@ -1172,7 +1172,7 @@ Route::get('/video-imsakiyah', function () {
         '25_link_preview_720p' => "",
         '25_link_download_480p' => "",
         '25_link_download_720p' => "",
-        '25_tanggal' => "",
+        '25_tanggal' => "2024-04-05",
 
         '26_nama' => "Video Imsakiyah 26",
         '26_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-26.mp4',
@@ -1182,7 +1182,7 @@ Route::get('/video-imsakiyah', function () {
         '26_link_preview_720p' => "",
         '26_link_download_480p' => "",
         '26_link_download_720p' => "",
-        '26_tanggal' => "",
+        '26_tanggal' => "2024-04-06",
 
         '27_nama' => "Video Imsakiyah 27",
         '27_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-27.mp4',
@@ -1192,7 +1192,7 @@ Route::get('/video-imsakiyah', function () {
         '27_link_preview_720p' => "",
         '27_link_download_480p' => "",
         '27_link_download_720p' => "",
-        '27_tanggal' => "",
+        '27_tanggal' => "2024-04-07",
 
         '28_nama' => "Video Imsakiyah 28",
         '28_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-28.mp4',
@@ -1202,7 +1202,7 @@ Route::get('/video-imsakiyah', function () {
         '28_link_preview_720p' => "",
         '28_link_download_480p' => "",
         '28_link_download_720p' => "",
-        '28_tanggal' => "",
+        '28_tanggal' => "2024-04-08",
 
         '29_nama' => "Video Imsakiyah 29",
         '29_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-29.mp4',
@@ -1212,7 +1212,7 @@ Route::get('/video-imsakiyah', function () {
         '29_link_preview_720p' => "",
         '29_link_download_480p' => "",
         '29_link_download_720p' => "",
-        '29_tanggal' => "",
+        '29_tanggal' => "2024-04-09",
 
         '30_nama' => "Video Imsakiyah 30",
         '30_video_sore' => 'assets/video/jadwal-imsakiyah/kudus/sore/sore-30.mp4',
@@ -1222,7 +1222,7 @@ Route::get('/video-imsakiyah', function () {
         '30_link_preview_720p' => "",
         '30_link_download_480p' => "",
         '30_link_download_720p' => "",
-        '30_tanggal' => "",
+        '30_tanggal' => "2024-04-10",
 
         'deskripsi' => "Ramadhan adalah bulan suci dalam agama Islam di mana umat muslim berpuasa dari terbit fajar hingga terbenam matahari. Puasa Ramadhan juga menjadi momen untuk meningkatkan ketaqwaan dan memperkuat ikatan dengan Allah SWT. Selain itu, Ramadhan juga merupakan waktu yang tepat untuk berbagi dan saling memberi kepada sesama.\n\nSalah satu hal yang penting dalam menjalankan ibadah puasa Ramadhan adalah mengetahui jadwal imsakiyah. Jadwal imsakiyah adalah jadwal yang menentukan waktu berbuka dan sahur. Berikut kami sediakan Video jadwal imsakiyah untuk Ramadhan tahun 1445 H/2024 M untuk wilayah kabupaten Kudus.\n\n",
 
