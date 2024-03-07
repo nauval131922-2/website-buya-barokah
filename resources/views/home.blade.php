@@ -7,8 +7,11 @@
             <div class="carousel-inner">
                 <!-- Slide 1 -->
 
-                <div class="carousel-item active" style="background-image: url(assets/images/slider/min/webp/slider-1.webp)">
-                    <div class="carousel-container">
+                {{-- <div class="carousel-item active" style="background-image: url(assets/images/slider/min/webp/slider-1.webp)"> --}}
+                {{-- note: nama folder tidak bisa pakai spasi, semula slider ramadhan, saya ubah ke slider-ramadhan --}}
+                <div class="carousel-item active"
+                    style="background-image: url(assets/images/slider/slider-ramadhan/slider-1.jpg)">
+                    {{-- <div class="carousel-container">
                         <div class="carousel-content animate__animated animate__fadeInUp">
                             <h2>Selamat Datang di <span>Percetakan Buya Barokah</span></h2>
                             <p>Percetakan Buya Barokah adalah Perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah
@@ -17,23 +20,30 @@
                             <div class="text-center"><a href="javascript:void(0)" class="btn-get-started"
                                     onclick="smoothScroll('about-us')">Baca Selengkapnya</a></div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
 
 
-                <div class="carousel-item slide-bg" style="background-image: url(assets/images/slider/min/webp/slider-2.webp);">
+                <div class="carousel-item slide-bg"
+                    style="background-image: url(assets/images/slider/min/webp/slider-2.webp);">
                 </div>
-                <div class="carousel-item slide-bg" style="background-image: url(assets/images/slider/min/webp/slider-3.webp);">
+                <div class="carousel-item slide-bg"
+                    style="background-image: url(assets/images/slider/min/webp/slider-3.webp);">
                 </div>
-                <div class="carousel-item slide-bg" style="background-image: url(assets/images/slider/min/webp/slider-4.webp);">
+                <div class="carousel-item slide-bg"
+                    style="background-image: url(assets/images/slider/min/webp/slider-4.webp);">
                 </div>
-                <div class="carousel-item slide-bg" style="background-image: url(assets/images/slider/min/webp/slider-5.webp);">
+                <div class="carousel-item slide-bg"
+                    style="background-image: url(assets/images/slider/min/webp/slider-5.webp);">
                 </div>
-                <div class="carousel-item slide-bg" style="background-image: url(assets/images/slider/min/webp/slider-6.webp);">
+                <div class="carousel-item slide-bg"
+                    style="background-image: url(assets/images/slider/min/webp/slider-6.webp);">
                 </div>
-                <div class="carousel-item slide-bg" style="background-image: url(assets/images/slider/min/webp/slider-7.webp);">
+                <div class="carousel-item slide-bg"
+                    style="background-image: url(assets/images/slider/min/webp/slider-7.webp);">
                 </div>
-                <div class="carousel-item slide-bg" style="background-image: url(assets/images/slider/min/webp/slider-8.webp);">
+                <div class="carousel-item slide-bg"
+                    style="background-image: url(assets/images/slider/min/webp/slider-8.webp);">
                 </div>
 
 
@@ -122,7 +132,8 @@
                 <div class="row portfolio-container" data-aos="fade-up">
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\al-quran\min\webp\all.webp') }}" class="img-fluid" alt="Al Quran All Thumbnail">
+                        <img src="{{ asset('assets\images\al-quran\min\webp\all.webp') }}" class="img-fluid"
+                            alt="Al Quran All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Al-Qur'an Al-Quddus</h4>
                             <a href="{{ asset('assets\images\al-quran\min\webp\all.webp') }}" data-gall="portfolioGallery"
@@ -132,7 +143,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\yanbua\min\webp\all.webp') }}" class="img-fluid" alt="Yanbua All Thumbnail">
+                        <img src="{{ asset('assets\images\yanbua\min\webp\all.webp') }}" class="img-fluid"
+                            alt="Yanbua All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Yanbu'a</h4>
                             {{-- <p>Al-Qur'an Al-Quddus</p> --}}
@@ -143,7 +155,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\buku\min\webp\all.webp') }}" class="img-fluid" alt="Buku All Thumbnail">
+                        <img src="{{ asset('assets\images\buku\min\webp\all.webp') }}" class="img-fluid"
+                            alt="Buku All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Buku</h4>
                             {{-- <p>Al-Qur'an Al-Quddus</p> --}}
@@ -154,7 +167,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\kalender\min\webp\all.webp') }}" class="img-fluid" alt="Kalender All Thumbnail">
+                        <img src="{{ asset('assets\images\kalender\min\webp\all.webp') }}" class="img-fluid"
+                            alt="Kalender All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Kalender</h4>
                             {{-- <p>Al-Qur'an Al-Quddus</p> --}}
@@ -165,7 +179,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\yasin\min\webp\all.webp') }}" class="img-fluid" alt="Yasin All Thumbnail">
+                        <img src="{{ asset('assets\images\yasin\min\webp\all.webp') }}" class="img-fluid"
+                            alt="Yasin All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Yasin</h4>
                             <a href="{{ asset('assets\images\yasin\min\webp\all.webp') }}" data-gall="portfolioGallery"
@@ -175,7 +190,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\nota\min\webp\all.webp') }}" class="img-fluid" alt="Nota All Thumbnail">
+                        <img src="{{ asset('assets\images\nota\min\webp\all.webp') }}" class="img-fluid"
+                            alt="Nota All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Nota Custom</h4>
                             <a href="{{ asset('assets\images\nota\min\webp\all.webp') }}" data-gall="portfolioGallery"
@@ -189,14 +205,16 @@
                             alt="Kitab Pesantren All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Kitab Pesantren</h4>
-                            <a href="{{ asset('assets\images\kitab-pesantren\min\webp\all.webp') }}" data-gall="portfolioGallery"
-                                class="venobox preview-link" title="Kitab Pesantren"><i class="bx bx-plus"></i></a>
+                            <a href="{{ asset('assets\images\kitab-pesantren\min\webp\all.webp') }}"
+                                data-gall="portfolioGallery" class="venobox preview-link" title="Kitab Pesantren"><i
+                                    class="bx bx-plus"></i></a>
                             <a href="{{ route('product.kitab-pesantren') }}" class="details-link"
                                 title="More Details"><i class="bx bx-link"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\brosur\min\webp\all.webp') }}" class="img-fluid" alt="Brosur All Thumbnail">
+                        <img src="{{ asset('assets\images\brosur\min\webp\all.webp') }}" class="img-fluid"
+                            alt="Brosur All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Brosur</h4>
                             <a href="{{ asset('assets\images\brosur\min\webp\all.webp') }}" data-gall="portfolioGallery"
@@ -206,11 +224,13 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\kop-surat\min\webp\all.webp') }}" class="img-fluid" alt="Kop Surat All Thumbnail">
+                        <img src="{{ asset('assets\images\kop-surat\min\webp\all.webp') }}" class="img-fluid"
+                            alt="Kop Surat All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Kop Surat</h4>
-                            <a href="{{ asset('assets\images\kop-surat\min\webp\all.webp') }}" data-gall="portfolioGallery"
-                                class="venobox preview-link" title="Kop Surat"><i class="bx bx-plus"></i></a>
+                            <a href="{{ asset('assets\images\kop-surat\min\webp\all.webp') }}"
+                                data-gall="portfolioGallery" class="venobox preview-link" title="Kop Surat"><i
+                                    class="bx bx-plus"></i></a>
                             <a href="{{ route('product.kop-surat') }}" class="details-link" title="More Details"><i
                                     class="bx bx-link"></i></a>
                         </div>
@@ -226,8 +246,8 @@
                                 <a href="{{ $alquran->{$i . '_gambar'} }}" data-gall="portfolioGallery"
                                     class="venobox preview-link" title="{{ $alquran->{$i . '_nama'} }}"><i
                                         class="bx bx-plus"></i></a>
-                                <a href="{{ route('product.alquran-detail', ['produk' => $i]) }}"
-                                    class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="{{ route('product.alquran-detail', ['produk' => $i]) }}" class="details-link"
+                                    title="More Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     @endfor
@@ -242,8 +262,8 @@
                                 <a href="{{ $yanbua->{$i . '_gambar'} }}" data-gall="portfolioGallery"
                                     class="venobox preview-link" title="{{ $yanbua->{$i . '_nama'} }}"><i
                                         class="bx bx-plus"></i></a>
-                                <a href="{{ route('product.yanbua-detail', ['produk' => $i]) }}"
-                                    class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="{{ route('product.yanbua-detail', ['produk' => $i]) }}" class="details-link"
+                                    title="More Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     @endfor
@@ -258,8 +278,8 @@
                                 <a href="{{ $buku->{$i . '_gambar'} }}" data-gall="portfolioGallery"
                                     class="venobox preview-link" title="{{ $buku->{$i . '_nama'} }}"><i
                                         class="bx bx-plus"></i></a>
-                                <a href="{{ route('product.buku-detail', ['produk' => $i]) }}"
-                                    class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="{{ route('product.buku-detail', ['produk' => $i]) }}" class="details-link"
+                                    title="More Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     @endfor
@@ -276,8 +296,8 @@
                                 <a href="{{ $kalender->{$i . '_gambar'} }}" data-gall="portfolioGallery"
                                     class="venobox preview-link" title="{{ $kalender->{$i . '_nama'} }}"><i
                                         class="bx bx-plus"></i></a>
-                                <a href="{{ route('product.kalender-detail', ['produk' => $i]) }}"
-                                    class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="{{ route('product.kalender-detail', ['produk' => $i]) }}" class="details-link"
+                                    title="More Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     @endfor
@@ -293,8 +313,8 @@
                                 <a href="{{ $nota->{$i . '_gambar'} }}" data-gall="portfolioGallery"
                                     class="venobox preview-link" title="{{ $nota->{$i . '_nama'} }}"><i
                                         class="bx bx-plus"></i></a>
-                                <a href="{{ route('product.nota-detail', ['produk' => $i]) }}"
-                                    class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="{{ route('product.nota-detail', ['produk' => $i]) }}" class="details-link"
+                                    title="More Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     @endfor
@@ -310,8 +330,8 @@
                                 <a href="{{ $yasin->{$i . '_gambar'} }}" data-gall="portfolioGallery"
                                     class="venobox preview-link" title="{{ $yasin->{$i . '_nama'} }}"><i
                                         class="bx bx-plus"></i></a>
-                                <a href="{{ route('product.yasin-detail', ['produk' => $i]) }}"
-                                    class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="{{ route('product.yasin-detail', ['produk' => $i]) }}" class="details-link"
+                                    title="More Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     @endfor
@@ -346,8 +366,8 @@
                                 <a href="{{ $brosur->{$i . '_gambar'} }}" data-gall="portfolioGallery"
                                     class="venobox preview-link" title="{{ $brosur->{$i . '_nama'} }}"><i
                                         class="bx bx-plus"></i></a>
-                                <a href="{{ route('product.brosur-detail', ['produk' => $i]) }}"
-                                    class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="{{ route('product.brosur-detail', ['produk' => $i]) }}" class="details-link"
+                                    title="More Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     @endfor
@@ -362,8 +382,8 @@
                                 <a href="{{ $kop_surat->{$i . '_gambar'} }}" data-gall="portfolioGallery"
                                     class="venobox preview-link" title="{{ $kop_surat->{$i . '_nama'} }}"><i
                                         class="bx bx-plus"></i></a>
-                                <a href="{{ route('product.kop-surat-detail', ['produk' => $i]) }}"
-                                    class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="{{ route('product.kop-surat-detail', ['produk' => $i]) }}" class="details-link"
+                                    title="More Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     @endfor
@@ -544,15 +564,15 @@
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-remaja.webp') }}" class="img-fluid"
-                                alt="Logo Pondok Tahfidh Yanbu'ul Quran Remaja">
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-remaja.webp') }}"
+                                class="img-fluid" alt="Logo Pondok Tahfidh Yanbu'ul Quran Remaja">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-menawan.webp') }}" class="img-fluid"
-                                alt="Logo Pondok Tahfidh Yanbu'ul Quran Menawan">
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-menawan.webp') }}"
+                                class="img-fluid" alt="Logo Pondok Tahfidh Yanbu'ul Quran Menawan">
                         </div>
                     </div>
 
