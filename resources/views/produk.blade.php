@@ -24,7 +24,7 @@
         $n = 3;
         $jumlah_daerah = 10;
     } elseif (strpos(url()->current(), 'video-imsakiyah')) {
-        $n = 30;
+        // $n = 30;
         $jumlah_hari = 29;
         $jumlah_link_preview = 29; // Jumlah link preview yang ingin ditampilkan
     }
