@@ -10,7 +10,7 @@
                 {{-- <div class="carousel-item active" style="background-image: url(assets/images/slider/min/webp/slider-1.webp)"> --}}
                 {{-- note: nama folder tidak bisa pakai spasi, semula slider ramadhan, saya ubah ke slider-ramadhan --}}
                 <div class="carousel-item active"
-                    style="background-image: url(assets/images/slider/slider-ramadhan/slider-1.jpg)">
+                    style="background-image: url(assets/images/slider/slider-ramadhan/slider-1-rev.jpg)">
                     {{-- <div class="carousel-container">
                         <div class="carousel-content animate__animated animate__fadeInUp">
                             <h2>Selamat Datang di <span>Percetakan Buya Barokah</span></h2>
