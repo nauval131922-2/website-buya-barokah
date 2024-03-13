@@ -390,7 +390,7 @@
             </p>
         @endif
 
-        @if ((strpos(url()->current(), 'video-imsakiyah') !== false) && (date('Y-m-d') == '2024-03-12'))
+        @if ((strpos(url()->current(), 'video-imsakiyah') !== false) && (date('Y-m-d') >= '2024-03-12'))
             <!-- HTML for pop-up video player -->
             <div class="video-popup" id="videoPopup">
                 <h2><i class='bx bx-video bx-flashing'></i> Video Imsakiyah Hari Ini</h2>
