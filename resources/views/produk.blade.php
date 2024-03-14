@@ -46,6 +46,7 @@
                 border-radius: 5px;
                 transition: transform 0.3s ease;
                 margin-bottom: 0;
+                z-index: 9999;
             }
 
             .visit-counter:hover {
@@ -95,71 +96,6 @@
             }
         </style>
     @endif
-
-    @if (strpos(url()->current(), 'video-imsakiyah') !== false)
-        <style>
-            /* CSS for pop-up video player */
-            /* Customize as needed */
-            .video-popup {
-                display: none;
-                position: fixed;
-                top: 55%;
-                left: 90%;
-                transform: translate(-50%, -50%);
-                z-index: 9999;
-                background: #fff;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            }
-
-            iframe {
-                border-radius: 10px;
-                margin-bottom: -10px;
-            }
-
-            /*  tombol close taruh di pojok kiri atas */
-            .video-popup button {
-                position: absolute;
-                top: -10px;
-                right: -10px;
-                background: #fff;
-                border: none;
-                font-size: 20px;
-                cursor: pointer;
-                padding: 5px 10px;
-                border-radius: 50%;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                font-weight: bold;
-                color: #5c5c5c;
-                font-size: 12px;
-            }
-
-            .video-popup button:hover {
-                background-color: #f1f1f1;
-            }
-
-            .video-popup button:focus {
-                outline: none;
-            }
-
-            .video-popup h2 {
-                text-align: center;
-                margin-top: 10px;
-                font-size: 14px;
-                font-weight: bold;
-            }
-
-            /*  atur untuk tampilan mobile */
-            @media (max-width: 767px) {
-                .video-popup {
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-        </style>
-    @endif
-
 
     <body>
 
@@ -390,7 +326,7 @@
             </p>
         @endif
 
-        @if ((strpos(url()->current(), 'video-imsakiyah') !== false) && (date('Y-m-d') >= '2024-03-12'))
+        {{-- @if ((strpos(url()->current(), 'video-imsakiyah') !== false) && (date('Y-m-d') >= '2024-03-12'))
             <!-- HTML for pop-up video player -->
             <div class="video-popup" id="videoPopup">
                 <h2><i class='bx bx-video bx-flashing'></i> Video Imsakiyah Hari Ini</h2>
@@ -406,7 +342,7 @@
 
                 <button onclick="closeVideo()">X</button>
             </div>
-        @endif
+        @endif --}}
 
     </body>
 

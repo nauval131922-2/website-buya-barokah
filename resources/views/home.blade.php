@@ -1,6 +1,144 @@
 @extends('master')
 
 @section('content')
+
+<?php
+
+    $jumlah_link_preview = 29; // Jumlah link preview yang ingin ditampilkan
+
+?>
+
+{{-- @if (strpos(url()->current(), 'jadwal-imsakiyah') !== false || strpos(url()->current(), 'video-imsakiyah') !== false) --}}
+<style>
+    .visit-counter {
+        position: fixed;
+        bottom: 15px;
+        /* Ubah posisi ke bawah */
+        left: 15px;
+        font-size: 12px;
+        /* Ukuran font kecilkan */
+        background-color: #1bbd36;
+        color: #fff;
+        padding: 5px 8px;
+        /* Sesuaikan padding */
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+        margin-bottom: 0;
+        z-index: 9999;
+    }
+
+    .visit-counter:hover {
+        transform: translateY(0) scale(1.05);
+        /* Ubah transform */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .visit-counter strong {
+        display: none;
+    }
+
+    .visit-counter:hover .bx-stats {
+        display: none;
+    }
+
+    .visit-counter:hover strong,
+    .visit-counter:hover span {
+        display: inline-block;
+    }
+
+    .visit-counter span {
+        font-weight: bold;
+    }
+
+    .visit-counter .bx-stats {
+        display: inline-block;
+        font-size: 16px;
+        /* Sesuaikan ukuran font */
+        margin-right: 5px;
+        /* Sesuaikan margin */
+    }
+
+    .visit-counter .actual-count {
+        display: none;
+        /* Sembunyikan nilai sebenarnya */
+    }
+
+    .visit-counter:hover .actual-count {
+        display: inline-block;
+        /* Tampilkan nilai sebenarnya saat dihover */
+    }
+
+    .visit-counter:hover .plus-sign {
+        display: none;
+        /* Sembunyikan tanda + saat dihover */
+    }
+</style>
+{{-- @endif --}}
+
+    {{-- @if (strpos(url()->current(), 'video-imsakiyah') !== true) --}}
+        <style>
+            /* CSS for pop-up video player */
+            /* Customize as needed */
+            .video-popup {
+                display: none;
+                position: fixed;
+                top: 55%;
+                left: 90%;
+                transform: translate(-50%, -50%);
+                z-index: 9999;
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+
+            iframe {
+                border-radius: 10px;
+                margin-bottom: -10px;
+            }
+
+            /*  tombol close taruh di pojok kiri atas */
+            .video-popup button {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                background: #fff;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                padding: 5px 10px;
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                font-weight: bold;
+                color: #5c5c5c;
+                font-size: 12px;
+            }
+
+            .video-popup button:hover {
+                background-color: #f1f1f1;
+            }
+
+            .video-popup button:focus {
+                outline: none;
+            }
+
+            .video-popup h2 {
+                text-align: center;
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            /*  atur untuk tampilan mobile */
+            @media (max-width: 767px) {
+                .video-popup {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        </style>
+    {{-- @endif --}}
+
     <section id="hero">
         <div id="heroCarousel" class="carousel slide carousel-fade carousel-slide" data-ride="carousel">
             {{-- <div class="carousel-inner" role="listbox"> --}}
@@ -598,6 +736,43 @@
 
     </main>
 
+    {{-- @if (strpos(url()->current(), 'jadwal-imsakiyah') !== false || strpos(url()->current(), 'video-imsakiyah') !== false) --}}
+            <p class="visit-counter">
+                <i class='bx bx-stats'></i>
+                <strong>Jumlah kunjungan:</strong>
+                <span class="plus-sign">
+                    @if ($visit_count > 99)
+                        99+
+                    @else
+                        {{ $visit_count }}
+                    @endif
+                </span>
+                <span class="actual-count">
+                    {{ $visit_count }}
+                </span>
+            </p>
+        {{-- @endif --}}
+
+    {{-- @if (strpos(url()->current(), 'video-imsakiyah') !== false && date('Y-m-d') >= '2024-03-12') --}}
+    @if (date('Y-m-d') >= '2024-03-12')
+        <!-- HTML for pop-up video player -->
+        <div class="video-popup" id="videoPopup">
+            <h2><i class='bx bx-video bx-flashing'></i> <a href="{{ route('product.video-imsakiyah') }}" style="color: rgb(77, 70, 67)">Video Imsakiyah</a> Hari Ini</h2>
+
+            @for ($i = 1; $i <= $jumlah_link_preview; $i++)
+                @if (date('Y-m-d') == $video_imsakiyah->{$i . '_tanggal'})
+                    <iframe width="225" height="400"
+                        src="{{ asset($video_imsakiyah->{$i . '_link_preview_480p'}) }}" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
+                @else
+                    @continue
+                @endif
+            @endfor
+
+            <button onclick="closeVideo()">X</button>
+        </div>
+    @endif
+
     <script>
         function smoothScroll(target) {
             var targetElement = document.getElementById(target);
@@ -610,5 +785,22 @@
                 });
             }
         }
+    </script>
+
+    <script>
+        // Function to show the pop-up video player
+        function showVideo() {
+            document.getElementById('videoPopup').style.display = 'block';
+        }
+
+        // Function to close the pop-up video player
+        function closeVideo() {
+            document.getElementById('videoPopup').style.display = 'none';
+        }
+
+        // Show the video pop-up when the page is loaded
+        window.onload = function() {
+            showVideo();
+        };
     </script>
 @endsection
