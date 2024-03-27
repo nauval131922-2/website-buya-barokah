@@ -2,141 +2,168 @@
 
 @section('content')
 
-<?php
+    <?php
 
     $jumlah_link_preview = 29; // Jumlah link preview yang ingin ditampilkan
 
-?>
+    ?>
 
-{{-- @if (strpos(url()->current(), 'jadwal-imsakiyah') !== false || strpos(url()->current(), 'video-imsakiyah') !== false) --}}
-<style>
-    .visit-counter {
-        position: fixed;
-        bottom: 15px;
-        /* Ubah posisi ke bawah */
-        left: 15px;
-        font-size: 12px;
-        /* Ukuran font kecilkan */
-        background-color: #1bbd36;
-        color: #fff;
-        padding: 5px 8px;
-        /* Sesuaikan padding */
-        border-radius: 5px;
-        transition: transform 0.3s ease;
-        margin-bottom: 0;
-        z-index: 9999;
-    }
+    {{-- @if (strpos(url()->current(), 'jadwal-imsakiyah') !== false || strpos(url()->current(), 'video-imsakiyah') !== false) --}}
+    <style>
+        .visit-counter {
+            position: fixed;
+            /* top: 15px; */
+            top: 50%;
+            /* transform: translateY(-50%); */
+            /* Ubah posisi ke bawah */
+            left: 15px;
+            font-size: 12px;
+            /* Ukuran font kecilkan */
+            background-color: #1bbd36;
+            color: #fff;
+            padding: 5px 8px;
+            /* Sesuaikan padding */
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            margin-bottom: 0;
+            z-index: 9999;
+        }
 
-    .visit-counter:hover {
-        transform: translateY(0) scale(1.05);
-        /* Ubah transform */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
+        .visit-counter:hover {
+            transform: translateY(0) scale(1.05);
+            /* Ubah transform */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
 
-    .visit-counter strong {
-        display: none;
-    }
+        .visit-counter strong {
+            display: none;
+        }
 
-    .visit-counter:hover .bx-stats {
-        display: none;
-    }
+        .visit-counter:hover .bx-stats {
+            display: none;
+        }
 
-    .visit-counter:hover strong,
-    .visit-counter:hover span {
-        display: inline-block;
-    }
+        .visit-counter:hover strong,
+        .visit-counter:hover span {
+            display: inline-block;
+        }
 
-    .visit-counter span {
-        font-weight: bold;
-    }
+        .visit-counter span {
+            font-weight: bold;
+        }
 
-    .visit-counter .bx-stats {
-        display: inline-block;
-        font-size: 16px;
-        /* Sesuaikan ukuran font */
-        margin-right: 5px;
-        /* Sesuaikan margin */
-    }
+        .visit-counter .bx-stats {
+            display: inline-block;
+            font-size: 16px;
+            /* Sesuaikan ukuran font */
+            margin-right: 5px;
+            /* Sesuaikan margin */
+        }
 
-    .visit-counter .actual-count {
-        display: none;
-        /* Sembunyikan nilai sebenarnya */
-    }
+        .visit-counter .actual-count {
+            display: none;
+            /* Sembunyikan nilai sebenarnya */
+        }
 
-    .visit-counter:hover .actual-count {
-        display: inline-block;
-        /* Tampilkan nilai sebenarnya saat dihover */
-    }
+        .visit-counter:hover .actual-count {
+            display: inline-block;
+            /* Tampilkan nilai sebenarnya saat dihover */
+        }
 
-    .visit-counter:hover .plus-sign {
-        display: none;
-        /* Sembunyikan tanda + saat dihover */
-    }
-</style>
-{{-- @endif --}}
+        .visit-counter:hover .plus-sign {
+            display: none;
+            /* Sembunyikan tanda + saat dihover */
+        }
+    </style>
+    {{-- @endif --}}
 
     {{-- @if (strpos(url()->current(), 'video-imsakiyah') !== true) --}}
-        <style>
-            /* CSS for pop-up video player */
-            /* Customize as needed */
+    <style>
+        /* CSS for pop-up video player */
+        /* Customize as needed */
+        .video-popup {
+            display: none;
+            position: fixed;
+            top: 55%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            border-radius: 10px;
+            margin-bottom: -10px;
+        }
+
+        /*  tombol close taruh di pojok kiri atas */
+        .video-popup button {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #fff;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            color: #5c5c5c;
+            font-size: 12px;
+        }
+
+        .video-popup button:hover {
+            background-color: #f1f1f1;
+        }
+
+        .video-popup button:focus {
+            outline: none;
+        }
+
+        .video-popup h2 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /*  atur untuk tampilan mobile */
+        @media (max-width: 767px) {
             .video-popup {
-                display: none;
-                position: fixed;
-                top: 55%;
-                left: 90%;
+                top: 50%;
+                left: 50%;
                 transform: translate(-50%, -50%);
-                z-index: 9999;
-                background: #fff;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             }
+        }
 
-            iframe {
-                border-radius: 10px;
-                margin-bottom: -10px;
-            }
 
-            /*  tombol close taruh di pojok kiri atas */
-            .video-popup button {
-                position: absolute;
-                top: -10px;
-                right: -10px;
-                background: #fff;
-                border: none;
-                font-size: 20px;
-                cursor: pointer;
-                padding: 5px 10px;
-                border-radius: 50%;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                font-weight: bold;
-                color: #5c5c5c;
-                font-size: 12px;
-            }
+    </style>
 
-            .video-popup button:hover {
-                background-color: #f1f1f1;
-            }
+    <style>
+        .whatsapp-button {
+            position: fixed;
+            left: 15px;
+            bottom: 15px;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
 
-            .video-popup button:focus {
-                outline: none;
-            }
+        .whatsapp-button:hover {
+            transform: translateY(0) scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
 
-            .video-popup h2 {
-                text-align: center;
-                margin-top: 10px;
-                font-size: 14px;
-                font-weight: bold;
-            }
-
-            /*  atur untuk tampilan mobile */
-            @media (max-width: 767px) {
-                .video-popup {
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-        </style>
+        .whatsapp-button i {
+            font-size: 35px;
+            color: #fff;
+            background-color: #1bbd36;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
     {{-- @endif --}}
 
     <section id="hero">
@@ -736,28 +763,35 @@
 
     </main>
 
+    <div id="whatsapp-button" class="whatsapp-button">
+        <a href="https://wa.me/6281227041901" target="_blank">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+    </div>
+
     {{-- @if (strpos(url()->current(), 'jadwal-imsakiyah') !== false || strpos(url()->current(), 'video-imsakiyah') !== false) --}}
-            <p class="visit-counter">
-                <i class='bx bx-stats'></i>
-                <strong>Jumlah kunjungan:</strong>
-                <span class="plus-sign">
-                    @if ($visit_count > 99)
-                        99+
-                    @else
-                        {{ $visit_count }}
-                    @endif
-                </span>
-                <span class="actual-count">
-                    {{ $visit_count }}
-                </span>
-            </p>
-        {{-- @endif --}}
+    <p class="visit-counter">
+        <i class='bx bx-stats'></i>
+        <strong>Jumlah kunjungan:</strong>
+        <span class="plus-sign">
+            @if ($visit_count > 99)
+                99+
+            @else
+                {{ $visit_count }}
+            @endif
+        </span>
+        <span class="actual-count">
+            {{ $visit_count }}
+        </span>
+    </p>
+    {{-- @endif --}}
 
     {{-- @if (strpos(url()->current(), 'video-imsakiyah') !== false && date('Y-m-d') >= '2024-03-12') --}}
     @if (date('Y-m-d') >= '2024-03-12')
         <!-- HTML for pop-up video player -->
         <div class="video-popup" id="videoPopup">
-            <h2><i class='bx bx-video bx-flashing'></i> <a href="{{ route('product.video-imsakiyah') }}" style="color: rgb(77, 70, 67)">Video Imsakiyah</a> Hari Ini</h2>
+            <h2><i class='bx bx-video bx-flashing'></i> <a href="{{ route('product.video-imsakiyah') }}"
+                    style="color: rgb(77, 70, 67)">Video Imsakiyah</a> Hari Ini</h2>
 
             @for ($i = 1; $i <= $jumlah_link_preview; $i++)
                 @if (date('Y-m-d') == $video_imsakiyah->{$i . '_tanggal'})
