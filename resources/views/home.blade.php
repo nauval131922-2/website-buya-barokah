@@ -13,20 +13,23 @@
         .visit-counter {
             position: fixed;
             /* top: 15px; */
-            top: 50%;
+            top: 80px;
             /* transform: translateY(-50%); */
             /* Ubah posisi ke bawah */
             left: 15px;
             font-size: 12px;
             /* Ukuran font kecilkan */
-            background-color: #1bbd36;
-            color: #fff;
+            /* background-color: #1bbd36; */
+            color: #1bbd36;
+            /* color: #fff; */
+            background-color: #fff;
             padding: 5px 8px;
             /* Sesuaikan padding */
             border-radius: 5px;
             transition: transform 0.3s ease;
             margin-bottom: 0;
             z-index: 9999;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .visit-counter:hover {
