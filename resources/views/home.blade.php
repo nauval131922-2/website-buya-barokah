@@ -8,76 +8,13 @@
 
     ?>
 
-    {{-- @if (strpos(url()->current(), 'jadwal-imsakiyah') !== false || strpos(url()->current(), 'video-imsakiyah') !== false) --}}
-    <style>
-        .visit-counter {
-            position: fixed;
-            /* top: 15px; */
-            top: 80px;
-            /* transform: translateY(-50%); */
-            /* Ubah posisi ke bawah */
-            left: 15px;
-            font-size: 12px;
-            /* Ukuran font kecilkan */
-            /* background-color: #1bbd36; */
-            color: #1bbd36;
-            /* color: #fff; */
-            background-color: #fff;
-            padding: 5px 8px;
-            /* Sesuaikan padding */
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-            margin-bottom: 0;
-            z-index: 9999;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    <link rel="stylesheet" href="{{ asset('assets/css/slick.min.css') }}" type="text/css" />
+    <link rel="stylesheet" href="https://www.anugerahprint.com/liteprint/assets/plugins/slick/slick-theme.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="{{ asset('assets/css/az_theme.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('assets/css/az_theme_max.css') }}" type="text/css" />
 
-        .visit-counter:hover {
-            transform: translateY(0) scale(1.05);
-            /* Ubah transform */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .visit-counter strong {
-            display: none;
-        }
-
-        .visit-counter:hover .bx-stats {
-            display: none;
-        }
-
-        .visit-counter:hover strong,
-        .visit-counter:hover span {
-            display: inline-block;
-        }
-
-        .visit-counter span {
-            font-weight: bold;
-        }
-
-        .visit-counter .bx-stats {
-            display: inline-block;
-            font-size: 16px;
-            /* Sesuaikan ukuran font */
-            margin-right: 5px;
-            /* Sesuaikan margin */
-        }
-
-        .visit-counter .actual-count {
-            display: none;
-            /* Sembunyikan nilai sebenarnya */
-        }
-
-        .visit-counter:hover .actual-count {
-            display: inline-block;
-            /* Tampilkan nilai sebenarnya saat dihover */
-        }
-
-        .visit-counter:hover .plus-sign {
-            display: none;
-            /* Sembunyikan tanda + saat dihover */
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('assets/css/az_theme_custom.css') }}" type="text/css" />
     {{-- @endif --}}
 
     {{-- @if (strpos(url()->current(), 'video-imsakiyah') !== true) --}}
@@ -141,97 +78,149 @@
                 transform: translate(-50%, -50%);
             }
         }
-
-
     </style>
 
-    <style>
-        .whatsapp-button {
-            position: fixed;
-            left: 15px;
-            bottom: 15px;
-            z-index: 1000;
-            transition: transform 0.3s ease;
-        }
 
-        .whatsapp-button:hover {
-            transform: translateY(0) scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .whatsapp-button i {
-            font-size: 35px;
-            color: #fff;
-            background-color: #1bbd36;
-            border-radius: 5px;
-            padding: 5px;
-        }
-    </style>
     {{-- @endif --}}
 
-    <section id="hero">
-        <div id="heroCarousel" class="carousel slide carousel-fade carousel-slide" data-ride="carousel">
-            {{-- <div class="carousel-inner" role="listbox"> --}}
-            <div class="carousel-inner">
-                <!-- Slide 1 -->
+    <style>
+        /* jika dalam lebar layar laptop */
+        @media (min-width: 1086px) {
+            .content {
+                margin-top: 105px;
+            }
+        }
 
-                {{-- <div class="carousel-item active" style="background-image: url(assets/images/slider/min/webp/slider-1.webp)"> --}}
-                {{-- note: nama folder tidak bisa pakai spasi, semula slider ramadhan, saya ubah ke slider-ramadhan --}}
-                <div class="carousel-item active"
-                    style="background-image: url(assets/images/slider/slider-ramadhan/slider-1-rev.jpg)">
-                    {{-- <div class="carousel-container">
-                        <div class="carousel-content animate__animated animate__fadeInUp">
-                            <h2>Selamat Datang di <span>Percetakan Buya Barokah</span></h2>
-                            <p>Percetakan Buya Barokah adalah Perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah
-                                Melayani bermacam Jenis Produk cetak, Brosur, Majalah, Buku, Kalender, Undangan, Kartu Nama,
-                                Nota dan produk cetak lainnya.</p>
-                            <div class="text-center"><a href="javascript:void(0)" class="btn-get-started"
-                                    onclick="smoothScroll('about-us')">Baca Selengkapnya</a></div>
+        /* jika dalam lebar layar tablet */
+        @media (max-width: 1085px) {
+            .content {
+                margin-top: -55px;
+            }
+        }
+
+        /* ubah cursor saat hover gambar di slideshow */
+        .slideshow-list .sideshow-list img {
+            cursor: grab;
+        }
+    </style>
+
+    <div class="content" id="hero2">
+        <div class="container-slideshow">
+            <div class="col-slideshow">
+                <div class="slideshow">
+                    <div class="slideshow-list">
+                        <div class="sideshow-list">
+                            <a href="javascript:void(0)"><img alt="cetak stiker murah"
+                                    src="{{ asset('assets/images/slider/slider-ramadhan/slider-1-rev.jpg') }}"
+                                    class="img-slideshow" /></a>
                         </div>
-                    </div> --}}
+                    </div>
+                    <div class="slideshow-list">
+                        <div class="sideshow-list">
+                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                    src="{{ asset('assets/images/slider/min/webp/slider-2.webp') }}"
+                                    class="img-slideshow" /></a>
+                        </div>
+                    </div>
+                    <div class="slideshow-list">
+                        <div class="sideshow-list">
+                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                    src="{{ asset('assets/images/slider/min/webp/slider-3.webp') }}"
+                                    class="img-slideshow" /></a>
+                        </div>
+                    </div>
+                    <div class="slideshow-list">
+                        <div class="sideshow-list">
+                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                    src="{{ asset('assets/images/slider/min/webp/slider-4.webp') }}"
+                                    class="img-slideshow" /></a>
+                        </div>
+                    </div>
+                    <div class="slideshow-list">
+                        <div class="sideshow-list">
+                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                    src="{{ asset('assets/images/slider/min/webp/slider-5.webp') }}"
+                                    class="img-slideshow" /></a>
+                        </div>
+                    </div>
+                    <div class="slideshow-list">
+                        <div class="sideshow-list">
+                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                    src="{{ asset('assets/images/slider/min/webp/slider-6.webp') }}"
+                                    class="img-slideshow" /></a>
+                        </div>
+                    </div>
+                    <div class="slideshow-list">
+                        <div class="sideshow-list">
+                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                    src="{{ asset('assets/images/slider/min/webp/slider-7.webp') }}"
+                                    class="img-slideshow" /></a>
+                        </div>
+                    </div>
+                    <div class="slideshow-list">
+                        <div class="sideshow-list">
+                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                    src="{{ asset('assets/images/slider/min/webp/slider-8.webp') }}"
+                                    class="img-slideshow" /></a>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="carousel-item slide-bg"
-                    style="background-image: url(assets/images/slider/min/webp/slider-2.webp);">
-                </div>
-                <div class="carousel-item slide-bg"
-                    style="background-image: url(assets/images/slider/min/webp/slider-3.webp);">
-                </div>
-                <div class="carousel-item slide-bg"
-                    style="background-image: url(assets/images/slider/min/webp/slider-4.webp);">
-                </div>
-                <div class="carousel-item slide-bg"
-                    style="background-image: url(assets/images/slider/min/webp/slider-5.webp);">
-                </div>
-                <div class="carousel-item slide-bg"
-                    style="background-image: url(assets/images/slider/min/webp/slider-6.webp);">
-                </div>
-                <div class="carousel-item slide-bg"
-                    style="background-image: url(assets/images/slider/min/webp/slider-7.webp);">
-                </div>
-                <div class="carousel-item slide-bg"
-                    style="background-image: url(assets/images/slider/min/webp/slider-8.webp);">
-                </div>
-
-
             </div>
-
-            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-
-            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-
-            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
         </div>
-    </section><!-- End Hero -->
 
-    <!-- End Hero -->
+        <div class="slideshow-m">
+            <div class="slideshow-list">
+                <div class="box-slide">
+                    <a href="javascript:void(0)"><img alt="cetak stiker murah"
+                            src="{{ asset('assets/images/slider/slider-ramadhan/slider-1-rev.jpg') }}" /></a>
+                </div>
+            </div>
+            <div class="slideshow-list">
+                <div class="box-slide">
+                    <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                            src="{{ asset('assets/images/slider/min/webp/slider-2.webp') }}" /></a>
+                </div>
+            </div>
+            <div class="slideshow-list">
+                <div class="box-slide">
+                    <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                            src="{{ asset('assets/images/slider/min/webp/slider-3.webp') }}" /></a>
+                </div>
+            </div>
+            <div class="slideshow-list">
+                <div class="box-slide">
+                    <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                            src="{{ asset('assets/images/slider/min/webp/slider-4.webp') }}" /></a>
+                </div>
+            </div>
+            <div class="slideshow-list">
+                <div class="box-slide">
+                    <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                            src="{{ asset('assets/images/slider/min/webp/slider-5.webp') }}" /></a>
+                </div>
+            </div>
+            <div class="slideshow-list">
+                <div class="box-slide">
+                    <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                            src="{{ asset('assets/images/slider/min/webp/slider-6.webp') }}" /></a>
+                </div>
+            </div>
+            <div class="slideshow-list">
+                <div class="box-slide">
+                    <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                            src="{{ asset('assets/images/slider/min/webp/slider-7.webp') }}" /></a>
+                </div>
+            </div>
+            <div class="slideshow-list">
+                <div class="box-slide">
+                    <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                            src="{{ asset('assets/images/slider/min/webp/slider-8.webp') }}" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <main id="main">
 
@@ -239,11 +228,11 @@
         <section id="about-us" class="about-us">
             <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
+                <div class="section-title" style="padding-bottom: 30px!important;">
                     <h2>Mengubah Ide menjadi karya seni</strong></h2>
                 </div>
 
-                <div class="row content">
+                <div class="row content" style="margin-top:0!important">
                     <div class="col-lg-6" data-aos="fade-right">
                         <h2>Percetakan <br>Buya Barokah</h2>
                         <h3>Menawarkan solusi terbaik untuk mewujudkan semua ide kreatif dari konsumen menjadi produk
@@ -300,18 +289,19 @@
                 <div class="row portfolio-container" data-aos="fade-up">
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\al-quran\min\webp\all.webp') }}" class="img-fluid"
+                        <img src="{{ asset('assets\images\al-quran\min\webp\all.webp') }}" class="img-fluid rounded"
                             alt="Al Quran All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Al-Qur'an Al-Quddus</h4>
-                            <a href="{{ asset('assets\images\al-quran\min\webp\all.webp') }}" data-gall="portfolioGallery"
-                                class="venobox preview-link" title="Al-Qur'an Al-Quddus"><i class="bx bx-plus"></i></a>
+                            <a href="{{ asset('assets\images\al-quran\min\webp\all.webp') }}"
+                                data-gall="portfolioGallery" class="venobox preview-link" title="Al-Qur'an Al-Quddus"><i
+                                    class="bx bx-plus"></i></a>
                             <a href="{{ route('product.alquran') }}" class="details-link" title="More Details"><i
                                     class="bx bx-link"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\yanbua\min\webp\all.webp') }}" class="img-fluid"
+                        <img src="{{ asset('assets\images\yanbua\min\webp\all.webp') }}" class="img-fluid rounded"
                             alt="Yanbua All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Yanbu'a</h4>
@@ -323,7 +313,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\buku\min\webp\all.webp') }}" class="img-fluid"
+                        <img src="{{ asset('assets\images\buku\min\webp\all.webp') }}" class="img-fluid rounded"
                             alt="Buku All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Buku</h4>
@@ -335,19 +325,20 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\kalender\min\webp\all.webp') }}" class="img-fluid"
+                        <img src="{{ asset('assets\images\kalender\min\webp\all.webp') }}" class="img-fluid rounded"
                             alt="Kalender All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Kalender</h4>
                             {{-- <p>Al-Qur'an Al-Quddus</p> --}}
-                            <a href="{{ asset('assets\images\kalender\min\webp\all.webp') }}" data-gall="portfolioGallery"
-                                class="venobox preview-link" title="Kalender"><i class="bx bx-plus"></i></a>
+                            <a href="{{ asset('assets\images\kalender\min\webp\all.webp') }}"
+                                data-gall="portfolioGallery" class="venobox preview-link" title="Kalender"><i
+                                    class="bx bx-plus"></i></a>
                             <a href="{{ route('product.kalender') }}" class="details-link" title="More Details"><i
                                     class="bx bx-link"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\yasin\min\webp\all.webp') }}" class="img-fluid"
+                        <img src="{{ asset('assets\images\yasin\min\webp\all.webp') }}" class="img-fluid rounded"
                             alt="Yasin All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Yasin</h4>
@@ -358,7 +349,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\nota\min\webp\all.webp') }}" class="img-fluid"
+                        <img src="{{ asset('assets\images\nota\min\webp\all.webp') }}" class="img-fluid rounded"
                             alt="Nota All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Nota Custom</h4>
@@ -369,7 +360,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\kitab-pesantren\min\webp\all.webp') }}" class="img-fluid"
+                        <img src="{{ asset('assets\images\kitab-pesantren\min\webp\all.webp') }}" class="img-fluid rounded"
                             alt="Kitab Pesantren All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Kitab Pesantren</h4>
@@ -381,7 +372,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\brosur\min\webp\all.webp') }}" class="img-fluid"
+                        <img src="{{ asset('assets\images\brosur\min\webp\all.webp') }}" class="img-fluid rounded"
                             alt="Brosur All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Brosur</h4>
@@ -392,7 +383,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\kop-surat\min\webp\all.webp') }}" class="img-fluid"
+                        <img src="{{ asset('assets\images\kop-surat\min\webp\all.webp') }}" class="img-fluid rounded"
                             alt="Kop Surat All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Kop Surat</h4>
@@ -406,7 +397,7 @@
 
                     @for ($i = 1; $i <= 18; $i++)
                         <div class="col-lg-4 col-md-6 portfolio-item filter-alquran hidden-div">
-                            <img src="{{ $alquran->{$i . '_gambar'} }}" class="img-fluid"
+                            <img src="{{ $alquran->{$i . '_gambar'} }}" class="img-fluid rounded"
                                 alt="{{ $alquran->{$i . '_nama'} }}">
                             <div class="portfolio-info">
                                 <h4>{{ $alquran->{$i . '_nama'} }}</h4>
@@ -422,7 +413,7 @@
 
                     @for ($i = 1; $i <= 9; $i++)
                         <div class="col-lg-4 col-md-6 portfolio-item filter-yanbua hidden-div">
-                            <img src="{{ $yanbua->{$i . '_gambar'} }}" class="img-fluid"
+                            <img src="{{ $yanbua->{$i . '_gambar'} }}" class="img-fluid rounded"
                                 alt="{{ $yanbua->{$i . '_nama'} }}">
                             <div class="portfolio-info">
                                 <h4>{{ $yanbua->{$i . '_nama'} }}</h4>
@@ -438,7 +429,7 @@
 
                     @for ($i = 1; $i <= 6; $i++)
                         <div class="col-lg-4 col-md-6 portfolio-item filter-buku hidden-div">
-                            <img src="{{ $buku->{$i . '_gambar'} }}" class="img-fluid"
+                            <img src="{{ $buku->{$i . '_gambar'} }}" class="img-fluid rounded"
                                 alt="{{ $buku->{$i . '_nama'} }}">
                             <div class="portfolio-info">
                                 <h4>{{ $buku->{$i . '_nama'} }}</h4>
@@ -456,7 +447,7 @@
 
                     @for ($i = 1; $i <= 3; $i++)
                         <div class="col-lg-4 col-md-6 portfolio-item filter-kalender hidden-div">
-                            <img src="{{ $kalender->{$i . '_gambar'} }}" class="img-fluid"
+                            <img src="{{ $kalender->{$i . '_gambar'} }}" class="img-fluid rounded"
                                 alt="{{ $kalender->{$i . '_nama'} }}">
                             <div class="portfolio-info">
                                 <h4>{{ $kalender->{$i . '_nama'} }}</h4>
@@ -473,7 +464,7 @@
 
                     @for ($i = 1; $i <= 10; $i++)
                         <div class="col-lg-4 col-md-6 portfolio-item filter-nota hidden-div">
-                            <img src="{{ $nota->{$i . '_gambar'} }}" class="img-fluid"
+                            <img src="{{ $nota->{$i . '_gambar'} }}" class="img-fluid rounded"
                                 alt="{{ $nota->{$i . '_nama'} }}">
                             <div class="portfolio-info">
                                 <h4>{{ $nota->{$i . '_nama'} }}</h4>
@@ -490,7 +481,7 @@
 
                     @for ($i = 1; $i <= 15; $i++)
                         <div class="col-lg-4 col-md-6 portfolio-item filter-yasin hidden-div">
-                            <img src="{{ $yasin->{$i . '_gambar'} }}" class="img-fluid"
+                            <img src="{{ $yasin->{$i . '_gambar'} }}" class="img-fluid rounded"
                                 alt="{{ $yasin->{$i . '_nama'} }}">
                             <div class="portfolio-info">
                                 <h4>{{ $yasin->{$i . '_nama'} }}</h4>
@@ -508,7 +499,7 @@
 
                     @for ($i = 1; $i <= 6; $i++)
                         <div class="col-lg-4 col-md-6 portfolio-item filter-kitab-pesantren hidden-div">
-                            <img src="{{ $kitab_pesantren->{$i . '_gambar'} }}" class="img-fluid"
+                            <img src="{{ $kitab_pesantren->{$i . '_gambar'} }}" class="img-fluid rounded"
                                 alt="{{ $kitab_pesantren->{$i . '_nama'} }}">
                             <div class="portfolio-info">
                                 <h4>{{ $kitab_pesantren->{$i . '_nama'} }}</h4>
@@ -526,7 +517,7 @@
 
                     @for ($i = 1; $i <= 4; $i++)
                         <div class="col-lg-4 col-md-6 portfolio-item filter-brosur hidden-div">
-                            <img src="{{ $brosur->{$i . '_gambar'} }}" class="img-fluid"
+                            <img src="{{ $brosur->{$i . '_gambar'} }}" class="img-fluid rounded"
                                 alt="{{ $brosur->{$i . '_nama'} }}">
                             <div class="portfolio-info">
                                 <h4>{{ $brosur->{$i . '_nama'} }}</h4>
@@ -542,7 +533,7 @@
 
                     @for ($i = 1; $i <= 1; $i++)
                         <div class="col-lg-4 col-md-6 portfolio-item filter-kop-surat hidden-div">
-                            <img src="{{ $kop_surat->{$i . '_gambar'} }}" class="img-fluid"
+                            <img src="{{ $kop_surat->{$i . '_gambar'} }}" class="img-fluid rounded"
                                 alt="{{ $kop_surat->{$i . '_nama'} }}">
                             <div class="portfolio-info">
                                 <h4>{{ $kop_surat->{$i . '_nama'} }}</h4>
@@ -704,28 +695,28 @@
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/yayasan.webp') }}" class="img-fluid"
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/yayasan.webp') }}" class="img-fluid rounded"
                                 alt="Logo Yayasan Arwaniyyah">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/alquddus.webp') }}" class="img-fluid"
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/alquddus.webp') }}" class="img-fluid rounded"
                                 alt="Logo Al Quran Al Quddus">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/yanbua.webp') }}" class="img-fluid"
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/yanbua.webp') }}" class="img-fluid rounded"
                                 alt="Logo Yanbua">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/mth.webp') }}" class="img-fluid"
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/mth.webp') }}" class="img-fluid rounded"
                                 alt="Logo Mubarokatan Thoyyibah">
                         </div>
                     </div>
@@ -733,27 +724,27 @@
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
                             <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-remaja.webp') }}"
-                                class="img-fluid" alt="Logo Pondok Tahfidh Yanbu'ul Quran Remaja">
+                                class="img-fluid rounded" alt="Logo Pondok Tahfidh Yanbu'ul Quran Remaja">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
                             <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-menawan.webp') }}"
-                                class="img-fluid" alt="Logo Pondok Tahfidh Yanbu'ul Quran Menawan">
+                                class="img-fluid rounded" alt="Logo Pondok Tahfidh Yanbu'ul Quran Menawan">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-pati.webp') }}" class="img-fluid"
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-pati.webp') }}" class="img-fluid rounded"
                                 alt="Logo Pondok Tahfidh Yanbu'ul Quran Boarding School 1 Pati (PTYQBS 1) Yayasan Asem Bungkuk">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-anak.webp') }}" class="img-fluid"
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-anak.webp') }}" class="img-fluid rounded"
                                 alt="Logo Pondok Tahfidh Yanbu'ul Quran Anak-anak">
                         </div>
                     </div>
@@ -766,31 +757,14 @@
 
     </main>
 
-    <div id="whatsapp-button" class="whatsapp-button">
-        <a href="https://wa.me/6281227041901" target="_blank">
-            <i class='bx bxl-whatsapp'></i>
-        </a>
-    </div>
+    {{-- @include('whatsapp') --}}
 
     {{-- @if (strpos(url()->current(), 'jadwal-imsakiyah') !== false || strpos(url()->current(), 'video-imsakiyah') !== false) --}}
-    <p class="visit-counter">
-        <i class='bx bx-stats'></i>
-        <strong>Jumlah kunjungan:</strong>
-        <span class="plus-sign">
-            @if ($visit_count > 99)
-                99+
-            @else
-                {{ $visit_count }}
-            @endif
-        </span>
-        <span class="actual-count">
-            {{ $visit_count }}
-        </span>
-    </p>
+
     {{-- @endif --}}
 
     {{-- @if (strpos(url()->current(), 'video-imsakiyah') !== false && date('Y-m-d') >= '2024-03-12') --}}
-    @if (date('Y-m-d') >= '2024-03-12')
+    @if (date('Y-m-d') >= '2024-03-12' && date('Y-m-d') <= '2024-04-09')
         <!-- HTML for pop-up video player -->
         <div class="video-popup" id="videoPopup">
             <h2><i class='bx bx-video bx-flashing'></i> <a href="{{ route('product.video-imsakiyah') }}"
@@ -839,5 +813,23 @@
         window.onload = function() {
             showVideo();
         };
+    </script>
+
+
+    <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/js/slick.min.js') }}"></script>
+
+    <script type="text/javascript">
+        jQuery(".slideshow").slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+        });
+
+        jQuery(".slideshow-m").slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+        });
     </script>
 @endsection

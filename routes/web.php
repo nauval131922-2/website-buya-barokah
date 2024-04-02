@@ -803,7 +803,16 @@ Route::get('/alquran', function () {
         'deskripsi' => "Al-Quran adalah kitab suci agama Islam yang dianggap sebagai firman Allah yang diwahyukan kepada Nabi Muhammad SAW melalui perantara Malaikat Jibril selama periode sekitar 23 tahun. Terdiri dari 114 surat yang memuat ayat-ayat yang menjadi pedoman hidup umat Islam. Al-Quran mengandung ajaran moral, hukum, panduan spiritual, dan petunjuk bagi umat Islam untuk menjalani kehidupan dengan mengikuti ajaran Allah SWT. Kitab ini dihafal dan dipelajari oleh jutaan umat Muslim di seluruh dunia sebagai sumber utama ajaran Islam.",
     ];
 
-    return view('produk', compact('data'));
+    $page = 'alquran';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+
+    return view('produk', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.alquran'); // resources/views/products/alquran.blade.php
 
 // navbar yanbua
@@ -852,7 +861,15 @@ Route::get('/yanbua', function () {
         'deskripsi' => "Kitab Yanbu'a adalah kitab yang berisi metode baca tulis dan menghafal Al-Qur'an. Metode ini disusun oleh KH. Muhammad Ulin Nuha Arwani dari Pondok Tahfidh Yanbu'ul Qur'an Kudus.Yanbu'a berarti sumber, yang mengambil dari kata Yanbu'ul Qur'an yang artinya sumber Al-Qur'an. Metode ini mengajarkan santri untuk membaca Al-Qur'an dengan cepat, tepat, lancar, dan tidak putus-putus. Santri tidak boleh mengeja, melainkan membaca langsung disesuaikan dengan makhorijul huruf.Kitab Yanbu'a juga berisi panduan untuk mengajarkan anak menulis huruf Arab, angka Arab, dan Arab Pegon.",
     ];
 
-    return view('produk', compact('data'));
+    $page = 'yanbua';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.yanbua'); // resources/views/products/yanbua.blade.php
 
 // navbar buku
@@ -889,7 +906,15 @@ Route::get('/buku', function () {
         'deskripsi' => "Buku adalah kumpulan kertas atau bahan lainnya yang dijilid menjadi satu pada salah satu ujungnya dan berisi tulisan atau gambar, atau keduanya, dan merupakan bentuk media publikasi atau hiburan. Buku dapat berisi tulisan dan gambar yang berfungsi untuk memberikan informasi, menghibur, atau menginspirasi pembacanya. Buku dapat berisi tulisan dan gambar yang berfungsi untuk memberikan informasi, menghibur, atau menginspirasi pembacanya.",
     ];
 
-    return view('produk', compact('data'));
+    $page = 'buku';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.buku'); // resources/views/products/buku.blade.php
 
 // navbar kalender
@@ -914,7 +939,15 @@ Route::get('/kalender', function () {
         'deskripsi' => "Kalender adalah sistem penanggalan yang digunakan untuk menghitung dan menampilkan hari dalam suatu periode. Nama kalender berasal dari bahasa Latin calendarium yang berarti buku catatan hutang, karena pada zaman dahulu, kalender digunakan untuk mencatat berbagai hutang yang harus dibayar pada tanggal-tanggal tertentu. Kalender juga dapat diartikan sebagai alat untuk menghitung hari, minggu, bulan, dan tahun. Kalender juga dapat diartikan sebagai alat untuk menghitung hari, minggu, bulan, dan tahun.",
     ];
 
-    return view('produk', compact('data'));
+    $page = 'kalender';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.kalender'); // resources/views/products/kalender.blade.php
 
 // navbar nota
@@ -967,7 +1000,15 @@ Route::get('/nota', function () {
         'deskripsi' => "Nota adalah kertas yang digunakan untuk mencatat sesuatu. Nota biasanya digunakan untuk mencatat transaksi jual beli, transaksi sewa menyewa, transaksi peminjaman, dan lain-lain. Nota biasanya digunakan untuk mencatat transaksi jual beli, transaksi sewa menyewa, transaksi peminjaman, dan lain-lain.",
     ];
 
-    return view('produk', compact('data'));
+    $page = 'nota';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.nota'); // resources/views/products/nota.blade.php
 
 // navbar yasin
@@ -1040,7 +1081,15 @@ Route::get('/yasin', function () {
         'deskripsi' => "Yasin adalah salah satu surat dalam Al-Qur'an yang terdiri dari 83 ayat. Yasin termasuk surat Makkiyah, diturunkan sesudah surat Al-Jin. Dinamakan Yasin karena dimulai dengan huruf Ya Sin. Yasin termasuk surat Makkiyah, diturunkan sesudah surat Al-Jin. Dinamakan Yasin karena dimulai dengan huruf Ya Sin.",
     ];
 
-    return view('produk', compact('data'));
+    $page = 'yasin';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.yasin'); // resources/views/products/yasin.blade.php
 
 // navbar kitab pesantren
@@ -1077,7 +1126,15 @@ Route::get('/kitab-pesantren', function () {
         'deskripsi' => "Kitab Pesantren umumnya merujuk pada kumpulan buku atau materi pembelajaran yang digunakan di pesantren, yang merupakan institusi pendidikan Islam tradisional di Indonesia. Pesantren adalah lembaga pendidikan yang memadukan pendidikan agama, kehidupan santri (murid), dan pengajaran tradisional.",
     ];
 
-    return view('produk', compact('data'));
+    $page = 'kitab-pesantren';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.kitab-pesantren'); // resources/views/products/kitab-pesantren.blade.php
 
 // navbar brosur
@@ -1106,7 +1163,15 @@ Route::get('/brosur', function () {
         'deskripsi' => "Brosur adalah kertas yang digunakan untuk mencatat sesuatu. Nota biasanya digunakan untuk mencatat transaksi jual beli, transaksi sewa menyewa, transaksi peminjaman, dan lain-lain. Nota biasanya digunakan untuk mencatat transaksi jual beli, transaksi sewa menyewa, transaksi peminjaman, dan lain-lain.",
     ];
 
-    return view('produk', compact('data'));
+    $page = 'brosur';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.brosur'); // resources/views/products/brosur.blade.php
 
 // navbar kop surat
@@ -1123,7 +1188,15 @@ Route::get('/kop-surat', function () {
         'deskripsi' => "Kop surat adalah bagian dari surat resmi yang berisi informasi tentang identitas instansi atau perusahaan pengirim surat. Kop surat biasanya diletakkan di bagian atas kertas surat dan mencakup beberapa elemen penting.",
     ];
 
-    return view('produk', compact('data'));
+    $page = 'kop-surat';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.kop-surat'); // resources/views/products/kop-surat.blade.php
 
 // navbar jadwal imsakiyah
@@ -1546,7 +1619,15 @@ Route::get('/jasa-cetak', function () {
         'jasa_cetak_gambar' => 'assets/images/jasa cetak/min/webp/buya-1.webp',
     ];
 
-    return view('jasa.jasa-cetak', compact('data'));
+    $page = 'jasa-cetak';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('jasa.jasa-cetak', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('jasa.jasa-cetak'); // resources/views/jasa/jasa-cetak.blade.php
 
 // navbar latar belakang
@@ -1555,7 +1636,15 @@ Route::get('/latar-belakang', function () {
         'latar_belakang_gambar' => 'assets/images/latar belakang/min/webp/buya-1.webp',
     ];
 
-    return view('tentang-kami.latar-belakang', compact('data'));
+    $page = 'latar-belakang';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('tentang-kami.latar-belakang', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('tentang-kami.latar-belakang'); // resources/views/tentang-kami/latar-belakang.blade.php
 
 // navbar visi misi
@@ -1564,7 +1653,15 @@ Route::get('/visi-misi', function () {
         'visi_misi_gambar' => 'assets/images/visi misi/min/webp/buya-1.webp',
     ];
 
-    return view('tentang-kami.visi-misi', compact('data'));
+    $page = 'visi-misi';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('tentang-kami.visi-misi', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('tentang-kami.visi-misi'); // resources/views/tentang-kami/visi-misi.blade.php
 
 
@@ -1854,7 +1951,15 @@ Route::get('/alquran/{produk}', function ($produk) {
         $data->harga = "Rp 110.000";
     }
 
-    return view('produk-detail', compact('data'));
+    $page = 'product.alquran-detail.' . $data->url . '.' . $produk;
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk-detail', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.alquran-detail'); // resources/views/products/alquran-detail.blade.php
 
 // per produk: yanbua
@@ -1913,7 +2018,15 @@ Route::get('/yanbua/{produk}', function ($produk) {
         $data->deskripsi = "Merupakan salah satu jilid dari yanbu'a yaitu Yanbu'a Jilid Makhorj.";
     }
 
-    return view('produk-detail', compact('data'));
+    $page = 'product.yanbua-detail.' . $data->url . '.' . $produk;
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk-detail', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.yanbua-detail'); // resources/views/products/yanbua-detail.blade.php
 
 // per produk: buku
@@ -1956,7 +2069,15 @@ Route::get('/buku/{produk}', function ($produk) {
         $data->deskripsi = "Merupakan salah satu buku umum untuk pengajaran pondok.";
     }
 
-    return view('produk-detail', compact('data'));
+    $page = 'product.buku-detail.' . $data->url . '.' . $produk;
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk-detail', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.buku-detail'); // resources/views/products/buku-detail.blade.php
 
 // per produk: kalender
@@ -1984,7 +2105,15 @@ Route::get('/kalender/{produk}', function ($produk) {
         $data->deskripsi = "Kalender dinding dengan ukuran 48 x 64 cm.";
     }
 
-    return view('produk-detail', compact('data'));
+    $page = 'product.kalender-detail.' . $data->url . '.' . $produk;
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk-detail', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.kalender-detail'); // resources/views/products/kalender-detail.blade.php
 
 // per produk: nota
@@ -2047,7 +2176,15 @@ Route::get('/nota/{produk}', function ($produk) {
         $data->deskripsi = "Merupakan salah satu jenis nota custom.";
     }
 
-    return view('produk-detail', compact('data'));
+    $page = 'product.nota-detail.' . $data->url . '.' . $produk;
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk-detail', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.nota-detail'); // resources/views/products/nota-detail.blade.php
 
 // per produk: yasin
@@ -2135,7 +2272,15 @@ Route::get('/yasin/{produk}', function ($produk) {
         $data->deskripsi = "Merupakan salah satu jenis yasin custom.";
     }
 
-    return view('produk-detail', compact('data'));
+    $page = 'product.yasin-detail.' . $data->url . '.' . $produk;
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk-detail', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.yasin-detail'); // resources/views/products/yasin-detail.blade.php
 
 // per produk: kitab pesantren
@@ -2178,7 +2323,15 @@ Route::get('/kitab-pesantren/{produk}', function ($produk) {
         $data->deskripsi = "Merupakan salah satu kitab Matan Soft Cover dengan ukuran tanggung.";
     }
 
-    return view('produk-detail', compact('data'));
+    $page = 'product.kitab-pesantren-detail.' . $data->url . '.' . $produk;
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk-detail', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.kitab-pesantren-detail'); // resources/views/products/kitab-pesantren-detail.blade.php
 
 // per produk: brosur
@@ -2211,7 +2364,15 @@ Route::get('/brosur/{produk}', function ($produk) {
         $data->deskripsi = "Merupakan salah satu jenis brosur custom.";
     }
 
-    return view('produk-detail', compact('data'));
+    $page = 'product.brosur-detail.' . $data->url . '.' . $produk;
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk-detail', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.brosur-detail'); // resources/views/products/brosur-detail.blade.php
 
 // per produk: kop surat
@@ -2229,5 +2390,13 @@ Route::get('/kop-surat/{produk}', function ($produk) {
         $data->deskripsi = "Merupakan salah satu jenis kop surat.";
     }
 
-    return view('produk-detail', compact('data'));
+    $page = 'product.kop-surat-detail.' . $data->url . '.' . $produk;
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('produk-detail', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('product.kop-surat-detail'); // resources/views/products/kop-surat-detail.blade.php
