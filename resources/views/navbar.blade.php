@@ -20,7 +20,7 @@
                     class="drop-down {{ request()->routeIs('product.*') && !Str::contains(request()->route()->getName(), 'product.alquran') && !Str::contains(request()->route()->getName(), 'product.yanbua') ? 'active' : '' }}">
 
 
-                    <a href="">Produk Kami</a>
+                    <a href="javascript:void(0)">Produk Kami</a>
                     <ul>
                         <li class="{{ Str::contains(request()->route()->getName(), 'product.buku') ? 'active' : '' }}">
                             <a href="{{ route('product.buku') }}">Buku</a>
