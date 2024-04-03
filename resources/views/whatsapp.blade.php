@@ -34,7 +34,7 @@
         /* Menentukan jarak dari bagian kiri */
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
         line-height: 1.5;
-        font-weight: 300;
+        font-weight: 500;
         z-index: 99999999;
     }
 
