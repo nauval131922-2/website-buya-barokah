@@ -9,7 +9,7 @@
             font-size: 12px;
             /* Ukuran font kecilkan */
             /* background-color: #1bbd36; */
-            color: #1bbd36;
+            color: #128450;
             /* color: #fff; */
             background-color: #fff;
             padding: 5px 8px;
