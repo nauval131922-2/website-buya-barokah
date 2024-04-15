@@ -5,7 +5,7 @@
             top: 80px;
             /* transform: translateY(-50%); */
             /* Ubah posisi ke bawah */
-            left: 15px;
+            right: 15px;
             font-size: 12px;
             /* Ukuran font kecilkan */
             /* background-color: #1bbd36; */

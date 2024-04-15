@@ -102,6 +102,23 @@
         .slideshow-list .sideshow-list img {
             cursor: grab;
         }
+
+        .animate__animated {
+            position: absolute;
+            padding: 20px;
+            /* background-color: rgba(255, 255, 255, 0.8); */
+            text-align: center;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            max-width: 1000px;
+            max-height: 200px;
+            z-index: 1;
+            color: #ffffff;
+        }
     </style>
 
     <div class="content" id="hero2">
@@ -110,11 +127,24 @@
                 <div class="slideshow">
                     <div class="slideshow-list">
                         <div class="sideshow-list">
-                            <a href="javascript:void(0)"><img alt="cetak stiker murah"
-                                    src="{{ asset('assets/images/slider/slider-ramadhan/slider-1-rev.jpg') }}"
-                                    class="img-slideshow" /></a>
+                            <div class="animate__animated animate__fadeInUp">
+                                <h2 style="font-size: 40px;font-weight:bold;">Selamat Datang di <span>Percetakan Buya Barokah</span></h2><br>
+                                <p style="font-style: italic; font-weight: 500;">Percetakan Buya Barokah adalah Perusahaan yang bergerak dibawah naungan Yayasan
+                                    Arwaniyyah
+                                    Melayani bermacam Jenis Produk cetak, Brosur, Majalah, Buku, Kalender, Undangan, Kartu
+                                    Nama,
+                                    Nota dan produk cetak lainnya.</p>
+                                <div class="text-center"><a href="javascript:void(0)" class="btn-get-started"
+                                        onclick="smoothScroll('about-us')">Baca Selengkapnya</a></div>
+                            </div>
+                            <a href="javascript:void(0)">
+                                <img style="filter: brightness(85%);" alt="cetak stiker murah"
+                                    src="{{ asset('assets/images/slider/min/webp/slider-1_2.webp') }}"
+                                    class="img-slideshow" />
+                            </a>
                         </div>
                     </div>
+
                     <div class="slideshow-list">
                         <div class="sideshow-list">
                             <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
@@ -172,7 +202,7 @@
             <div class="slideshow-list">
                 <div class="box-slide">
                     <a href="javascript:void(0)"><img alt="cetak stiker murah"
-                            src="{{ asset('assets/images/slider/slider-ramadhan/slider-1-rev.jpg') }}" /></a>
+                            src="{{ asset('assets/images/slider/min/webp/slider-1_2.webp') }}" /></a>
                 </div>
             </div>
             <div class="slideshow-list">
@@ -229,7 +259,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title" style="padding-bottom: 30px!important;">
-                    <h2>Mengubah Ide menjadi karya seni</strong></h2>
+                    <h2>Mengubah Ide menjadi karya seni</h2>
                 </div>
 
                 <div class="row content" style="margin-top:0!important">
@@ -360,8 +390,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-all">
-                        <img src="{{ asset('assets\images\kitab-pesantren\min\webp\all.webp') }}" class="img-fluid rounded"
-                            alt="Kitab Pesantren All Thumbnail">
+                        <img src="{{ asset('assets\images\kitab-pesantren\min\webp\all.webp') }}"
+                            class="img-fluid rounded" alt="Kitab Pesantren All Thumbnail">
                         <div class="portfolio-info">
                             <h4>Kitab Pesantren</h4>
                             <a href="{{ asset('assets\images\kitab-pesantren\min\webp\all.webp') }}"
@@ -695,29 +725,29 @@
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/yayasan.webp') }}" class="img-fluid rounded"
-                                alt="Logo Yayasan Arwaniyyah">
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/yayasan.webp') }}"
+                                class="img-fluid rounded" alt="Logo Yayasan Arwaniyyah">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/alquddus.webp') }}" class="img-fluid rounded"
-                                alt="Logo Al Quran Al Quddus">
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/alquddus.webp') }}"
+                                class="img-fluid rounded" alt="Logo Al Quran Al Quddus">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/yanbua.webp') }}" class="img-fluid rounded"
-                                alt="Logo Yanbua">
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/yanbua.webp') }}"
+                                class="img-fluid rounded" alt="Logo Yanbua">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/mth.webp') }}" class="img-fluid rounded"
-                                alt="Logo Mubarokatan Thoyyibah">
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/mth.webp') }}"
+                                class="img-fluid rounded" alt="Logo Mubarokatan Thoyyibah">
                         </div>
                     </div>
 
@@ -737,15 +767,16 @@
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-pati.webp') }}" class="img-fluid rounded"
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-pati.webp') }}"
+                                class="img-fluid rounded"
                                 alt="Logo Pondok Tahfidh Yanbu'ul Quran Boarding School 1 Pati (PTYQBS 1) Yayasan Asem Bungkuk">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="client-logo">
-                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-anak.webp') }}" class="img-fluid rounded"
-                                alt="Logo Pondok Tahfidh Yanbu'ul Quran Anak-anak">
+                            <img src="{{ asset('assets/images/kolaborasi/min/webp/ptyq-anak.webp') }}"
+                                class="img-fluid rounded" alt="Logo Pondok Tahfidh Yanbu'ul Quran Anak-anak">
                         </div>
                     </div>
 
