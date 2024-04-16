@@ -65,7 +65,7 @@
                             <a href="{{ route('tentang-kami.latar-belakang') }}">Latar Belakang</a>
                         </li>
                         <li class="{{ request()->routeIs('tentang-kami.visi-misi') ? 'active' : '' }}">
-                            <a href="{{ route('tentang-kami.visi-misi') }}">Visi Misi dan Tujuan</a>
+                            <a href="{{ route('tentang-kami.visi-misi') }}">Visi, Misi, dan Tujuan</a>
                         </li>
                     </ul>
                 </li>

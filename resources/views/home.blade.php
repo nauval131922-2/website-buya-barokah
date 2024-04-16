@@ -137,11 +137,7 @@
                         <div class="sideshow-list">
                             <div class="animate__animated animate__fadeInUp">
                                 <h2 style="font-size: 40px;font-weight:bold;">Selamat Datang di <span>Percetakan Buya Barokah</span></h2><br>
-                                <p style="font-style: italic; font-weight: 500;">Percetakan Buya Barokah adalah Perusahaan yang bergerak dibawah naungan Yayasan
-                                    Arwaniyyah
-                                    Melayani bermacam Jenis Produk cetak, Brosur, Majalah, Buku, Kalender, Undangan, Kartu
-                                    Nama,
-                                    Nota dan produk cetak lainnya.</p>
+                                <p style="font-style: italic; font-weight: 500;">Percetakan Buya Barokah adalah sebuah perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah yang melayani berbagai macam jenis produk cetak, seperti Brosur, Majalah, Buku, Kalender, Undangan, Kartu Nama, Nota, dan produk cetak lainnya.</p>
                                 <div class="text-center"><a href="javascript:void(0)" class="btn-get-started"
                                         onclick="smoothScroll('about-us')">Baca Selengkapnya</a></div>
                             </div>
@@ -274,13 +270,11 @@
                     <div class="col-lg-6" data-aos="fade-right">
                         <h2>Percetakan <br>Buya Barokah</h2>
                         <h3>Menawarkan solusi terbaik untuk mewujudkan semua ide kreatif dari konsumen menjadi produk
-                            cetakan dengan kualitas terbaik.</h3>
+                            cetak dengan kualitas terbaik.</h3>
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
                         <p>
-                            Percetakan Buya Barokah Perusahaan dibawah naungan Yayasan Arwaniyyah Melayani bermacam Jenis
-                            Produk cetak,
-                            Brosur, Majalah, Buku, Kalender, Undangan, Kartu Nama, Nota dan produk cetak lainnya.
+                            Percetakan Buya Barokah adalah sebuah perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah yang melayani berbagai macam jenis produk cetak, seperti Brosur, Majalah, Buku, Kalender, Undangan, Kartu Nama, Nota, dan produk cetak lainnya.
                         </p>
                         <ul>
                             <li><i class="ri-check-double-line"></i> Buat Ide, Kirim Desain, Terima Cetak</li>
@@ -288,7 +282,7 @@
                             <li><i class="ri-check-double-line"></i> Kapasitas Kecil sampai Besar</li>
                         </ul>
                         <p class="font-italic">
-                            Kami berkomitmen menghadirkan produk cetak terbaik dalam skala industri. Dengan dukungan
+                            Kami berkomitmen menghadirkan produk cetak terbaik dalam skala industri, dengan dukungan
                             teknologi dan SDM berpengalaman,
                             kami siap memenuhi kebutuhan pasar dengan kualitas terbaik.
                         </p>
