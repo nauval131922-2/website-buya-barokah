@@ -119,6 +119,14 @@
             z-index: 1;
             color: #ffffff;
         }
+
+        .animate__animated h2 {
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .animate__animated p {
+            text-shadow: 2px 2px 4px #000000;
+        }
     </style>
 
     <div class="content" id="hero2">
