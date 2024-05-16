@@ -2306,7 +2306,7 @@ Route::get('/kitab-pesantren/{produk}', function ($produk) {
         $data->kategori = "Kitab Pesantren";
         $data->gambar = 'assets/images/kitab-pesantren/min/webp/alfiyah.webp';
         $data->deskripsi = "Merupakan salah satu kitab Matan Soft Cover dengan ukuran tanggung.";
-    } elseif ($produk == '3') {
+    } elseif ($produk == '4') {
         $data->nama = 'Kitab Jurumiyyah';
         $data->kategori = "Kitab Pesantren";
         $data->gambar = 'assets/images/kitab-pesantren/min/webp/jurumiyah.webp';
