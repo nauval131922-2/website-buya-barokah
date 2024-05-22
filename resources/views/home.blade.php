@@ -15,12 +15,10 @@
     <link rel="stylesheet" href="{{ asset('assets/css/az_theme_max.css') }}" type="text/css" />
 
     <link rel="stylesheet" href="{{ asset('assets/css/az_theme_custom.css') }}" type="text/css" />
-    {{-- @endif --}}
 
-    {{-- @if (strpos(url()->current(), 'video-imsakiyah') !== true) --}}
+    {{-- /* CSS for pop-up video player */ --}}
+    {{-- /* Customize as needed */ --}}
     <style>
-        /* CSS for pop-up video player */
-        /* Customize as needed */
         .video-popup {
             display: none;
             position: fixed;
@@ -80,9 +78,6 @@
         }
     </style>
 
-
-    {{-- @endif --}}
-
     <style>
         /* jika dalam lebar layar laptop */
         @media (min-width: 1086px) {
@@ -98,17 +93,18 @@
             }
         }
 
+        .slideshow-list .sideshow-list img:hover {
+            cursor: default;
+        }
+
         /* ubah cursor saat hover gambar di slideshow */
-        .slideshow-list .sideshow-list img {
+        .slideshow-list .sideshow-list img:active {
             cursor: grab;
         }
 
         .animate__animated {
             position: absolute;
-            padding: 20px;
-            /* background-color: rgba(255, 255, 255, 0.8); */
             text-align: center;
-            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
             margin: auto;
             top: 0;
             left: 0;
@@ -120,10 +116,7 @@
             color: #ffffff;
         }
 
-        .animate__animated h2 {
-            text-shadow: 2px 2px 4px #000000;
-        }
-
+        .animate__animated h2,
         .animate__animated p {
             text-shadow: 2px 2px 4px #000000;
         }
@@ -136,8 +129,13 @@
                     <div class="slideshow-list">
                         <div class="sideshow-list">
                             <div class="animate__animated animate__fadeInUp">
-                                <h2 style="font-size: 40px;font-weight:bold;">Selamat Datang di <span>Percetakan Buya Barokah</span></h2><br>
-                                <p style="font-style: italic; font-weight: 500;">Percetakan Buya Barokah adalah sebuah perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah yang melayani berbagai macam jenis produk cetak, seperti Brosur, Majalah, Buku, Kalender, Undangan, Kartu Nama, Nota, dan produk cetak lainnya.</p>
+                                <h2 style="font-size: 40px;font-weight:bold;">Selamat Datang di <span>Percetakan Buya
+                                        Barokah</span></h2>
+                                <br>
+                                <p style="font-style: italic; font-weight: 500;">Percetakan Buya Barokah adalah sebuah
+                                    perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah yang melayani berbagai macam
+                                    jenis produk cetak, seperti Brosur, Majalah, Buku, Kalender, Undangan, Kartu Nama, Nota,
+                                    dan produk cetak lainnya.</p>
                                 <div class="text-center"><a href="javascript:void(0)" class="btn-get-started"
                                         onclick="smoothScroll('about-us')">Baca Selengkapnya</a></div>
                             </div>
@@ -274,7 +272,9 @@
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
                         <p>
-                            Percetakan Buya Barokah adalah sebuah perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah yang melayani berbagai macam jenis produk cetak, seperti Brosur, Majalah, Buku, Kalender, Undangan, Kartu Nama, Nota, dan produk cetak lainnya.
+                            Percetakan Buya Barokah adalah sebuah perusahaan yang bergerak dibawah naungan Yayasan
+                            Arwaniyyah yang melayani berbagai macam jenis produk cetak, seperti Brosur, Majalah, Buku,
+                            Kalender, Undangan, Kartu Nama, Nota, dan produk cetak lainnya.
                         </p>
                         <ul>
                             <li><i class="ri-check-double-line"></i> Buat Ide, Kirim Desain, Terima Cetak</li>
@@ -790,13 +790,6 @@
 
     </main>
 
-    {{-- @include('whatsapp') --}}
-
-    {{-- @if (strpos(url()->current(), 'jadwal-imsakiyah') !== false || strpos(url()->current(), 'video-imsakiyah') !== false) --}}
-
-    {{-- @endif --}}
-
-    {{-- @if (strpos(url()->current(), 'video-imsakiyah') !== false && date('Y-m-d') >= '2024-03-12') --}}
     @if (date('Y-m-d') >= '2024-03-12' && date('Y-m-d') <= '2024-04-09')
         <!-- HTML for pop-up video player -->
         <div class="video-popup" id="videoPopup">

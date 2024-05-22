@@ -16,7 +16,6 @@
 
                 .text-overlay {
                     position: absolute;
-                    padding: 20px;
                     text-align: center;
                     margin: auto;
                     top: 0;
@@ -34,7 +33,6 @@
                     text-shadow: 2px 2px 4px #000000;
                     font-size: 40px;
                     font-weight: bold;
-                    margin-bottom: 24px;
                 }
 
                 .text-overlay p {
@@ -50,6 +48,7 @@
                     class="full-width-image">
                 <div class="text-overlay animate__animated animate__fadeInUp">
                     <h2>Kesempatan Karier</h2>
+                    <br>
                     <p>PT Buya Barokah Div. Percetakan membuka kesempatan yang luas terhadap para tenaga ahli dan tenaga
                         terampil untuk dapat bergabung di perusahaan kami, serta mampu dan memiliki keinginan untuk
                         meningkatkan kompetensi yang sesuai dengan bidang yang dibutuhkan. Mari bergabung dan berkarir
