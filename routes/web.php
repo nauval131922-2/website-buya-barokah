@@ -691,35 +691,6 @@ Route::get('/', function () {
     return view('home', compact('alquran', 'yanbua', 'buku', 'kalender', 'nota', 'yasin', 'kitab_pesantren', 'brosur', 'kop_surat', 'video_imsakiyah'), ['visit_count' => $visitor->visit_count]);
 })->name('home');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // test menggunakan 1 file
 // navbar alquran
 Route::get('/alquran', function () {
@@ -1664,6 +1635,22 @@ Route::get('/visi-misi', function () {
     return view('tentang-kami.visi-misi', compact('data'), ['visit_count' => $visitor->visit_count]);
 })->name('tentang-kami.visi-misi'); // resources/views/tentang-kami/visi-misi.blade.php
 
+// navbar karier
+Route::get('/karier', function () {
+    $data = (object) [
+        'karier_gambar' => 'assets/images/karier/min/webp/buya-1.webp',
+    ];
+
+    $page = 'karier';
+
+    // Mencari atau membuat entry visitor baru untuk halaman ini
+    $visitor = ViewCount::firstOrCreate(['page' => $page]);
+
+    // Menambahkan visitor count
+    $visitor->increment('visit_count');
+
+    return view('karier', compact('data'), ['visit_count' => $visitor->visit_count]);
+})->name('karier');
 
 
 
