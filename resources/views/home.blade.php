@@ -93,12 +93,12 @@
             }
         }
 
-        .slideshow-list .sideshow-list img:hover {
+        .slideshow-list img:hover {
             cursor: default;
         }
 
         /* ubah cursor saat hover gambar di slideshow */
-        .slideshow-list .sideshow-list img:active {
+        .slideshow-list img:active {
             cursor: grab;
         }
 
@@ -127,74 +127,57 @@
             <div class="col-slideshow">
                 <div class="slideshow">
                     <div class="slideshow-list">
-                        <div class="sideshow-list">
-                            <div class="animate__animated animate__fadeInUp">
-                                <h2 style="font-size: 40px;font-weight:bold;">Selamat Datang di <span>Percetakan Buya
-                                        Barokah</span></h2>
-                                <br>
-                                <p style="font-style: italic; font-weight: 500;">Percetakan Buya Barokah adalah sebuah
-                                    perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah yang melayani berbagai macam
-                                    jenis produk cetak, seperti Brosur, Majalah, Buku, Kalender, Undangan, Kartu Nama, Nota,
-                                    dan produk cetak lainnya.</p>
-                                <div class="text-center"><a href="javascript:void(0)" class="btn-get-started"
-                                        onclick="smoothScroll('about-us')">Baca Selengkapnya</a></div>
-                            </div>
-                            <a href="javascript:void(0)">
-                                <img style="filter: brightness(85%);" alt="cetak stiker murah"
-                                    src="{{ asset('assets/images/slider/min/webp/slider-1_2.webp') }}"
-                                    class="img-slideshow" />
-                            </a>
+                        <div class="animate__animated animate__fadeInUp">
+                            <h2 style="font-size: 40px;font-weight:bold;">Selamat Datang di <span>Percetakan Buya
+                                    Barokah</span></h2>
+                            <br>
+                            <p style="font-style: italic; font-weight: 500;">Percetakan Buya Barokah adalah sebuah
+                                perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah yang melayani berbagai macam
+                                jenis produk cetak, seperti Brosur, Majalah, Buku, Kalender, Undangan, Kartu Nama, Nota,
+                                dan produk cetak lainnya.</p>
+                            <div class="text-center"><a href="javascript:void(0)" class="btn-get-started"
+                                    onclick="smoothScroll('about-us')">Baca Selengkapnya</a></div>
                         </div>
+                        <a href="javascript:void(0)">
+                            <img style="filter: brightness(85%);" alt="cetak stiker murah"
+                                src="{{ asset('assets/images/slider/min/webp/slider-1_2.webp') }}" class="img-slideshow" />
+                        </a>
                     </div>
 
                     <div class="slideshow-list">
-                        <div class="sideshow-list">
-                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
-                                    src="{{ asset('assets/images/slider/min/webp/slider-2.webp') }}"
-                                    class="img-slideshow" /></a>
-                        </div>
+                        <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                src="{{ asset('assets/images/slider/min/webp/slider-2.webp') }}"
+                                class="img-slideshow" /></a>
                     </div>
                     <div class="slideshow-list">
-                        <div class="sideshow-list">
-                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
-                                    src="{{ asset('assets/images/slider/min/webp/slider-3.webp') }}"
-                                    class="img-slideshow" /></a>
-                        </div>
+                        <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                src="{{ asset('assets/images/slider/min/webp/slider-3.webp') }}"
+                                class="img-slideshow" /></a>
                     </div>
                     <div class="slideshow-list">
-                        <div class="sideshow-list">
-                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
-                                    src="{{ asset('assets/images/slider/min/webp/slider-4.webp') }}"
-                                    class="img-slideshow" /></a>
-                        </div>
+                        <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                src="{{ asset('assets/images/slider/min/webp/slider-4.webp') }}"
+                                class="img-slideshow" /></a>
                     </div>
                     <div class="slideshow-list">
-                        <div class="sideshow-list">
-                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
-                                    src="{{ asset('assets/images/slider/min/webp/slider-5.webp') }}"
-                                    class="img-slideshow" /></a>
-                        </div>
+                        <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                src="{{ asset('assets/images/slider/min/webp/slider-5.webp') }}"
+                                class="img-slideshow" /></a>
                     </div>
                     <div class="slideshow-list">
-                        <div class="sideshow-list">
-                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
-                                    src="{{ asset('assets/images/slider/min/webp/slider-6.webp') }}"
-                                    class="img-slideshow" /></a>
-                        </div>
+                        <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                src="{{ asset('assets/images/slider/min/webp/slider-6.webp') }}"
+                                class="img-slideshow" /></a>
                     </div>
                     <div class="slideshow-list">
-                        <div class="sideshow-list">
-                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
-                                    src="{{ asset('assets/images/slider/min/webp/slider-7.webp') }}"
-                                    class="img-slideshow" /></a>
-                        </div>
+                        <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                src="{{ asset('assets/images/slider/min/webp/slider-7.webp') }}"
+                                class="img-slideshow" /></a>
                     </div>
                     <div class="slideshow-list">
-                        <div class="sideshow-list">
-                            <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
-                                    src="{{ asset('assets/images/slider/min/webp/slider-8.webp') }}"
-                                    class="img-slideshow" /></a>
-                        </div>
+                        <a href="javascript:void(0)"><img alt="Merchandise &amp; Stationery"
+                                src="{{ asset('assets/images/slider/min/webp/slider-8.webp') }}"
+                                class="img-slideshow" /></a>
                     </div>
                 </div>
             </div>

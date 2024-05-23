@@ -42,6 +42,22 @@
                 }
             </style>
 
+            <style>
+
+                .k-karier-bot {
+                    display: none;
+                }
+
+                @media (max-width: 1149px) {
+                    .text-overlay {
+                        display: none;
+                    }
+
+                    .k-karier-bot {
+                        display: block;
+                    }
+                }
+            </style>
 
             <div style="position: relative;">
                 <img src="{{ asset('assets/images/karier/min/webp/foto-depan.webp') }}" alt=""
@@ -53,19 +69,36 @@
                         terampil untuk dapat bergabung di perusahaan kami, serta mampu dan memiliki keinginan untuk
                         meningkatkan kompetensi yang sesuai dengan bidang yang dibutuhkan. Mari bergabung dan berkarir
                         bersama PT. Buya Barokah Div. Percetakan.</p>
-                    <div class="text-center">
-                        <a href="javascript:void(0)" class="btn-karier" onclick="smoothScroll('about-us')">Baca
-                            Selengkapnya</a>
-                    </div>
                 </div>
             </div>
 
 
 
-            <!-- ======= Portfolio Details Section ======= -->
-            {{-- <section id="portfolio-details" class="portfolio-details"> --}}
             <section id="blog" class="blog">
                 <div class="container" data-aos="fade-up">
+
+                    <div class="row k-karier-bot">
+
+                        <div class="col-lg-12 entries">
+
+                            <article class="entry entry-single" data-aos="fade-up" style="margin-bottom: 25px">
+                                <div class="entry-content">
+                                    <h2 style="font-weight: bold;text-align: center;">Kesempatan Karier</h2>
+                                    <br>
+                                    <p style="margin-bottom: -20px; line-height: 30px">PT Buya Barokah Div. Percetakan
+                                        membuka kesempatan yang luas terhadap para tenaga
+                                        ahli dan tenaga
+                                        terampil untuk dapat bergabung di perusahaan kami, serta mampu dan memiliki
+                                        keinginan untuk
+                                        meningkatkan kompetensi yang sesuai dengan bidang yang dibutuhkan. Mari bergabung
+                                        dan berkarir
+                                        bersama PT. Buya Barokah Div. Percetakan.</p>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </div>
 
                     <div class="row">
 
@@ -73,22 +106,43 @@
 
                             <article class="entry entry-single" data-aos="fade-up" style="margin-bottom: 25px">
                                 <div class="entry-content">
-                                    <p style="margin-bottom: -20px; line-height: 30px">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem modi nihil
-                                        itaque aperiam voluptate rem saepe consectetur. Obcaecati tempora id iste, optio
-                                        placeat, explicabo molestiae, expedita tenetur suscipit eveniet laborum aspernatur
-                                        at in reprehenderit voluptate quas ex tempore perspiciatis quod? Reprehenderit aut
-                                        consectetur officia voluptatum quisquam, deserunt ullam molestias amet culpa cumque
-                                        repellat doloremque voluptate iure hic aperiam excepturi eaque sunt asperiores
-                                        cupiditate error perspiciatis nisi facere optio vel! In aperiam nulla velit quia
-                                        placeat esse vero, cum ut voluptas impedit quibusdam, officia debitis sit deserunt
-                                        ullam. Nam impedit voluptate, neque, deleniti nulla, veritatis dolorem ratione eos
-                                        culpa ex recusandae.
-                                    </p>
-                                </div>
-                            </article><!-- End blog entry -->
 
-                        </div><!-- End blog entries list -->
+                                    <div class="row">
+                                        <div class="col-8" style="text-decoration: underline">
+                                            <h2 style="font-weight: bold">Digital Marketing</h2>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="text-right">
+                                                <a href="javascript:void(0)" class="btn-karier"
+                                                    onclick="smoothScroll('about-us')" style="margin:0">KLIK DI SINI UNTUK
+                                                    MENDAFTAR</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5 style="font-weight: bold;font-size: 18px">Kualifikasi</h5>
+                                            <ul>
+                                                <li>Pria dan Wanita max usia 27 tahun</li>
+                                                <li>Lulusan SMK/SMK semua jurusan</li>
+                                                <li>Memahami Excel & digital marketting</li>
+                                                <li>Bisa bekerja secara mandiri ataupun tim</li>
+                                                <li>Terbiasa bekerja target/deadline</li>
+                                                <li>Kreatif dan energik</li>
+                                                <li>Berpengalaman menjadi nilai plus</li>
+                                                <li>Terbiasa mengedit gambar dan video</li>
+                                                <li>Mempunyai keinginan belajar yang tinggi</li>
+                                                <li>Disiplin dan bertanggung jawab</li>
+                                                <li>Punya keinginan berkarier di dunia digital marketting</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
 
                     </div>
 
@@ -97,9 +151,9 @@
 
 
                 </div>
-            </section><!-- End Portfolio Details Section -->
+            </section>
 
-        </main><!-- End #main -->
+        </main>
 
     </body>
 @endsection
