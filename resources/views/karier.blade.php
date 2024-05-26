@@ -369,7 +369,7 @@
                                         <span>Punya keinginan berkarier di dunia digital marketting</span>
                                     </li>
                                 </ul>
-                                <button class="button-daftar">
+                                <button class="button-daftar" onclick="window.open('https://forms.gle/1xaoipm3VnSMQvbR8', '_blank')">
                                     <span class="button_lg">
                                         <span class="button_sl"></span>
                                         <span class="button_text">Klik di sini untuk mendaftar</span>
@@ -474,7 +474,7 @@
                                         <span>Punya keinginan berkarier di dunia digital marketting</span>
                                     </li>
                                 </ul>
-                                <button class="button-daftar">
+                                <button class="button-daftar" onclick="window.open('https://forms.gle/1xaoipm3VnSMQvbR8', '_blank')">
                                     <span class="button_lg">
                                         <span class="button_sl"></span>
                                         <span class="button_text">Klik di sini untuk mendaftar</span>
