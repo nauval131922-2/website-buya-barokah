@@ -114,104 +114,126 @@
                     color: rgba(167, 139, 250, 1);
                     color: #128450;
                 }
-
             </style>
 
             {{-- style button --}}
             <style>
-                button,
-                button::after {
-                    padding: 16px 20px;
-                    font-size: 18px;
-                    background: linear-gradient(45deg, transparent 5%, #128450 5%);
-                    border: 0;
-                    color: #fff;
-                    letter-spacing: 3px;
-                    line-height: 1;
-                    box-shadow: 6px 0px 0px #00e6f6;
-                    outline: transparent;
+                .button-daftar {
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    border: none;
+                    background: none;
+                    color: #1e1e1e;
+                    cursor: pointer;
                     position: relative;
+                    padding: 8px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 14px;
+                    transition: all .15s ease;
                 }
 
-                button::after {
-                    --slice-0: inset(50% 50% 50% 50%);
-                    --slice-1: inset(80% -6px 0 0);
-                    --slice-2: inset(50% -6px 30% 0);
-                    --slice-3: inset(10% -6px 85% 0);
-                    --slice-4: inset(40% -6px 43% 0);
-                    --slice-5: inset(80% -6px 5% 0);
-                    content: "Klik di sini untuk medaftar";
+                .button-daftar::before,
+                .button-daftar::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    height: calc(50% - 5px);
+                    border: 1px solid #7D8082;
+                    transition: all .15s ease;
+                }
+
+                .button-daftar::before {
+                    top: 0;
+                    border-bottom-width: 0;
+                }
+
+                .button-daftar::after {
+                    bottom: 0;
+                    border-top-width: 0;
+                }
+
+                .button-daftar:active,
+                .button-daftar:focus {
+                    outline: none;
+                }
+
+                .button-daftar:active::before,
+                .button-daftar:active::after {
+                    right: 3px;
+                    left: 3px;
+                }
+
+                .button-daftar:active::before {
+                    top: 3px;
+                }
+
+                .button-daftar:active::after {
+                    bottom: 3px;
+                }
+
+                .button_lg {
+                    position: relative;
+                    display: block;
+                    padding: 10px 20px;
+                    color: #fff;
+                    background-color: #1e1e1e;
+                    overflow: hidden;
+                    box-shadow: inset 0px 0px 0px 1px transparent;
+                }
+
+                .button_lg::before {
+                    content: '';
                     display: block;
                     position: absolute;
                     top: 0;
                     left: 0;
+                    width: 2px;
+                    height: 2px;
+                    background-color: #1e1e1e;
+                }
+
+                .button_lg::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
                     right: 0;
                     bottom: 0;
-                    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
-                    text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
-                    clip-path: var(--slice-0);
+                    width: 4px;
+                    height: 4px;
+                    background-color: #1e1e1e;
+                    transition: all .2s ease;
                 }
 
-                button:hover::after {
-                    animation: 1s glitch;
-                    animation-timing-function: steps(2, end);
+                .button_sl {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: -1px;
+                    left: -8px;
+                    width: 0;
+                    background-color: #128450;
+                    transform: skew(-15deg);
+                    transition: all .2s ease;
                 }
 
-                @keyframes glitch {
-                    0% {
-                        clip-path: var(--slice-1);
-                        transform: translate(-20px, -10px);
-                    }
+                .button_text {
+                    position: relative;
+                }
 
-                    10% {
-                        clip-path: var(--slice-3);
-                        transform: translate(10px, 10px);
-                    }
+                .button-daftar:hover {
+                    color: #1e1e1e;
+                }
 
-                    20% {
-                        clip-path: var(--slice-1);
-                        transform: translate(-10px, 10px);
-                    }
+                .button-daftar:hover .button_sl {
+                    width: calc(100% + 15px);
+                }
 
-                    30% {
-                        clip-path: var(--slice-3);
-                        transform: translate(0px, 5px);
-                    }
-
-                    40% {
-                        clip-path: var(--slice-2);
-                        transform: translate(-5px, 0px);
-                    }
-
-                    50% {
-                        clip-path: var(--slice-3);
-                        transform: translate(5px, 0px);
-                    }
-
-                    60% {
-                        clip-path: var(--slice-4);
-                        transform: translate(5px, 10px);
-                    }
-
-                    70% {
-                        clip-path: var(--slice-2);
-                        transform: translate(-10px, 10px);
-                    }
-
-                    80% {
-                        clip-path: var(--slice-5);
-                        transform: translate(20px, -10px);
-                    }
-
-                    90% {
-                        clip-path: var(--slice-1);
-                        transform: translate(-10px, 0px);
-                    }
-
-                    100% {
-                        clip-path: var(--slice-1);
-                        transform: translate(0);
-                    }
+                .button-daftar:hover .button_lg::after {
+                    background-color: #fff;
                 }
             </style>
 
@@ -347,7 +369,12 @@
                                         <span>Punya keinginan berkarier di dunia digital marketting</span>
                                     </li>
                                 </ul>
-                                <button type="button" class="action">Klik di sini untuk medaftar</button>
+                                <button class="button-daftar">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">Klik di sini untuk mendaftar</span>
+                                    </span>
+                                </button>
                             </div>
 
                         </div>
@@ -447,7 +474,12 @@
                                         <span>Punya keinginan berkarier di dunia digital marketting</span>
                                     </li>
                                 </ul>
-                                <button type="button" class="action">Klik di sini untuk medaftar</button>
+                                <button class="button-daftar">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">Klik di sini untuk mendaftar</span>
+                                    </span>
+                                </button>
                             </div>
 
                         </div>
