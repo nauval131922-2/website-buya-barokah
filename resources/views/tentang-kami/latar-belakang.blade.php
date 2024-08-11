@@ -45,11 +45,15 @@
 
                                 <div class="entry-content">
                                     <p>
-                                        Percetakan Buya Barokah berdiri pada tahun 2002, merupakan sebuah perusahaan
-                                        manufaktur yang lahir dibawah naungan Yayasan Arwaniyah Kudus yang beralamat di Jl.
-                                        Raya Bae Gondangmanis Kec. Bae Kab. Kudus. Perusahaan ini bergerak dalam bidang
-                                        percetakan yang menyuplai beberapa kitab untuk keperluan pengajaran pondok
-                                        pesantren.
+                                        PT. Buya Barokah berdiri pada 05 Januari 2006 bernamakan CV. Buya Barokah dengan akta pendirian No. 01 Tahun 2006 yang dibuatoleh notaris H. Paiman, S.H., kemudian pada tanggal 17 Februari 2011 dirubah menjadi PT Buya Barokah dengan akta pendirian No. 72 Tahun 2011 yang dibuat oleh notaris Lianty Achwas, S.H. ,
+                                    </p>
+
+                                    <p>
+                                        PT Buya Barokah merupakan sebuah perusahaan manufaktur unit kelolaan dari Yayasan Arwaniyyah Kudus yang terbagi menjadi 2 (dua) divisi yaitu : Divisi Percetakan dan Divisi Air Minum Dalam Kemasan (AMDK). Di awal berdirinya perusahaan ini berlokasi di Jl. KH. M. Arwani Kelurahan Kajeksan No. 24. untuk divisi percetakan dan di desa Singocandi Kota Kudus untuk divisi AMDK, kemudian pada tahun 2020 PT Buya Barokah pindah ke pabrik baru yang terletak di jalan raya Bae – Gondangmanis kec. Bae Kab. Kudus.
+                                    </p>
+
+                                    <p>
+                                        Divis percetakan bergerak dalam bidang percetakan yang menyetak beberapa kitab, khususnya Al Qur’an dan Yanbu’a untuk keperluan pengajaran pondok pesantren. Selain itu, PT. Buya Barokah juga menerima pesanan untuk membuat suatu produk yang berbahan dasar kertas dari masyarakat, seperti kalender, buku Yasin, majalah sekolah, undangan, dan lain-lain.
                                     </p>
 
                                     <p>
