@@ -84,10 +84,6 @@
                                                 <td>Berat</td>
                                                 <td>{{ $data->berat }}</td>
                                             </tr>
-                                            <tr>
-                                                <td>Harga</td>
-                                                <td>{{ $data->harga }}</td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 @endif
