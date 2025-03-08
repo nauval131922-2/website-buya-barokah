@@ -21,12 +21,12 @@
     } elseif (strpos(url()->current(), 'kop-surat')) {
         $n = 1;
     } elseif (strpos(url()->current(), 'jadwal-imsakiyah')) {
-        $n = 3;
-        $jumlah_daerah = 10;
+        $n = 1;
+        // $jumlah_daerah = 10;
     } elseif (strpos(url()->current(), 'video-imsakiyah')) {
         // $n = 30;
-        $jumlah_hari = 29;
-        $jumlah_link_preview = 29; // Jumlah link preview yang ingin ditampilkan
+        $jumlah_hari = 30;
+        $jumlah_link_preview = 30; // Jumlah link preview yang ingin ditampilkan
     }
     ?>
 
@@ -146,18 +146,18 @@
                     {{-- tambahan lainnya (di bawah card produk) --}}
                     @if (strpos(url()->current(), 'jadwal-imsakiyah') == true)
                         <div class="portfolio-description" style="margin-top: -50px">
-                            <p>
+                            {{-- <p>
                                 {!! nl2br($data->deskripsi_2) !!}
-                            </p>
+                            </p> --}}
 
-                            <h2 style="width: 100%; margin-top: 50px">{{ $data->judul_3 }}</h2>
+                            {{-- <h2 style="width: 100%; margin-top: 50px">{{ $data->judul_3 }}</h2> --}}
 
-                            <p>
+                            {{-- <p>
                                 {!! nl2br($data->deskripsi_4) !!}
-                            </p>
+                            </p> --}}
 
                             <table class="table table-striped">
-                                <thead>
+                                {{-- <thead>
                                     <tr>
                                         <th rowspan="2" style="text-align: center; vertical-align: middle">Nama Daerah
                                         </th>
@@ -168,9 +168,9 @@
                                         <th style="text-align: center; vertical-align: middle">Model 1</th>
                                         <th style="text-align: center; vertical-align: middle">Model 2</th>
                                     </tr>
-                                </thead>
+                                </thead> --}}
                                 <tbody>
-                                    @for ($i = 1; $i <= $jumlah_daerah; $i++)
+                                    {{-- @for ($i = 1; $i <= $jumlah_daerah; $i++)
                                         <tr>
                                             <td>{{ $data->{$i . '_daerah_nama'} }}</td>
                                             <td><a href="{{ asset($data->{$i . '_daerah_link_model_1'}) }}" class=""
@@ -180,7 +180,7 @@
                                                     target="_blank">
                                                     Download</a></td>
                                         </tr>
-                                    @endfor
+                                    @endfor --}}
                                 </tbody>
                             </table>
 
@@ -198,8 +198,8 @@
                                         {{-- <th rowspan="2" style="text-align: center; vertical-align: middle">Ramadhan</th>
                                         <th colspan="2" style="text-align: center; vertical-align: middle">Link Preview</th>
                                         <th colspan="2" style="text-align: center; vertical-align: middle">Link Download</th> --}}
-                                        <th >Ramadhan</th>
-                                        <th >Link Download</th>
+                                        <th>Ramadhan</th>
+                                        <th>Link Download</th>
                                     </tr>
                                     {{-- <tr>
                                         <th style="text-align: center; vertical-align: middle">480p</th>
@@ -217,8 +217,11 @@
                                             </td>
                                             <td><a href="{{ asset($data->{$i . '_link_preview_720p'}) }}" class=""
                                                     target="_blank">Preview</a> --}}
-                                            <td><a href="{{ asset($data->{$i . '_link_download_480p'}) }}" class=""
-                                                    target="_blank">Download</a>
+                                            <td>
+                                                @if (!empty($data->{$i . '_link_download_480p'}))
+                                                    <a href="{{ asset($data->{$i . '_link_download_480p'}) }}"
+                                                        class="" target="_blank">Download</a>
+                                                @endif
                                             </td>
                                             {{-- <td><a href="{{ asset($data->{$i . '_link_download_720p'}) }}" class=""
                                                     target="_blank">Download</a>
