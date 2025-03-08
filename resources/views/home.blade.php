@@ -4,7 +4,7 @@
 
     <?php
 
-    $jumlah_link_preview = 29; // Jumlah link preview yang ingin ditampilkan
+    $jumlah_link_preview = 30; // Jumlah link preview yang ingin ditampilkan
 
     ?>
 
@@ -773,7 +773,7 @@
 
     </main>
 
-    @if (date('Y-m-d') >= '2024-03-12' && date('Y-m-d') <= '2024-04-09')
+    @if (date('Y-m-d') >= '2025-03-01' && date('Y-m-d') <= '2025-03-31')
         <!-- HTML for pop-up video player -->
         <div class="video-popup" id="videoPopup">
             <h2><i class='bx bx-video bx-flashing'></i> <a href="{{ route('product.video-imsakiyah') }}"
