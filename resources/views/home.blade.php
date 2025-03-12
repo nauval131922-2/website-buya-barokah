@@ -122,6 +122,110 @@
         }
     </style>
 
+    <style>
+        /* Base styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Modal styling */
+        .modal {
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: #fff;
+            width: 90%;
+            max-width: 420px;
+            padding: 10px;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            margin: 12px;
+        }
+
+        /* Responsive video container with aspect ratio */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 177.78%;
+            /* 16:9 aspect ratio for portrait */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 28px;
+            color: #333;
+            background: rgba(255, 255, 255, 0.8);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            z-index: 10;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .close-btn:hover {
+            background: #fff;
+            transform: scale(1.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .modal-content {
+                width: 95%;
+                padding: 6px;
+                margin: 8px;
+            }
+
+            .close-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 24px;
+                top: -18px;
+                right: -18px;
+            }
+        }
+
+        @media (max-height: 700px) {
+            .video-container {
+                padding-bottom: 150%;
+                /* Slightly shorter ratio for smaller height screens */
+            }
+        }
+    </style>
+
     <div class="content" id="hero2">
         <div class="container-slideshow">
             <div class="col-slideshow">
@@ -131,8 +235,7 @@
                             <h2 style="font-size: 40px;font-weight:bold;">Selamat Datang di <span>Percetakan Buya
                                     Barokah</span></h2>
                             <br>
-                            <p style="font-style: italic; font-weight: 500;">Percetakan Buya Barokah adalah sebuah
-                                perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah yang melayani berbagai macam
+                            <p style="font-style: italic; font-weight: 500;">Percetakan Buya Barokah adalah salah satu percetakan terbesar di kudus-jawa tengah, serta perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah yang melayani berbagai macam
                                 jenis produk cetak, seperti Brosur, Majalah, Buku, Kalender, Undangan, Kartu Nama, Nota,
                                 dan produk cetak lainnya.</p>
                             <div class="text-center"><a href="javascript:void(0)" class="btn-get-started"
@@ -255,7 +358,7 @@
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
                         <p>
-                            Percetakan Buya Barokah adalah sebuah perusahaan yang bergerak dibawah naungan Yayasan
+                            Percetakan Buya Barokah adalah salah satu percetakan terbesar di kudus-jawa tengah, serta perusahaan yang bergerak dibawah naungan Yayasan
                             Arwaniyyah yang melayani berbagai macam jenis produk cetak, seperti Brosur, Majalah, Buku,
                             Kalender, Undangan, Kartu Nama, Nota, dan produk cetak lainnya.
                         </p>
@@ -774,22 +877,35 @@
     </main>
 
     @if (date('Y-m-d') >= '2025-03-01' && date('Y-m-d') <= '2025-03-31')
-        <!-- HTML for pop-up video player -->
-        <div class="video-popup" id="videoPopup">
-            <h2><i class='bx bx-video bx-flashing'></i> <a href="{{ route('product.video-imsakiyah') }}"
-                    style="color: rgb(77, 70, 67)">Video Imsakiyah</a> Hari Ini</h2>
-
-            @for ($i = 1; $i <= $jumlah_link_preview; $i++)
-                @if (date('Y-m-d') == $video_imsakiyah->{$i . '_tanggal'})
-                    <iframe width="225" height="400"
-                        src="{{ asset($video_imsakiyah->{$i . '_link_preview_480p'}) }}" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
-                @else
-                    @continue
-                @endif
-            @endfor
-
-            <button onclick="closeVideo()">X</button>
+        <!-- Modal -->
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-title"
+                    style="
+                text-align: center;
+                margin: 5px 0 15px 0;
+                padding-bottom: 10px;
+                font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+                color: #2c3e50;
+                font-size: 20px;
+                font-weight: 600;
+                border-bottom: 2px solid #f1f1f1;
+                text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                letter-spacing: 0.5px;">
+                    Video Imsakiyah Hari Ini
+                </div>
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <div class="video-container">
+                    @for ($i = 1; $i <= $jumlah_link_preview; $i++)
+                        @if (date('Y-m-d') == $video_imsakiyah->{$i . '_tanggal'})
+                            <iframe id="videoFrame" src="{{ asset($video_imsakiyah->{$i . '_link_preview_480p'}) }}"
+                                allow="autoplay" allowfullscreen></iframe>
+                        @else
+                            @continue
+                        @endif
+                    @endfor
+                </div>
+            </div>
         </div>
     @endif
 
@@ -807,23 +923,6 @@
         }
     </script>
 
-    <script>
-        // Function to show the pop-up video player
-        function showVideo() {
-            document.getElementById('videoPopup').style.display = 'block';
-        }
-
-        // Function to close the pop-up video player
-        function closeVideo() {
-            document.getElementById('videoPopup').style.display = 'none';
-        }
-
-        // Show the video pop-up when the page is loaded
-        window.onload = function() {
-            showVideo();
-        };
-    </script>
-
 
     <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/slick.min.js') }}"></script>
@@ -839,6 +938,36 @@
             dots: true,
             autoplay: true,
             autoplaySpeed: 5000,
+        });
+    </script>
+
+    <script>
+        // Prevent scrolling when modal is open
+        document.body.style.overflow = 'hidden';
+
+        function closeModal() {
+            document.getElementById('videoModal').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+
+            // Stop video when closing modal
+            const iframe = document.getElementById('videoFrame');
+            const iframeSrc = iframe.src;
+            iframe.src = iframeSrc;
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('videoModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
         });
     </script>
 @endsection

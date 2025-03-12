@@ -18,7 +18,7 @@
             border-radius: 5px;
             transition: transform 0.3s ease;
             margin-bottom: 0;
-            z-index: 9999;
+            z-index: 9;
         }
 
         .visit-counter:hover {
