@@ -503,7 +503,7 @@ Route::get('/', function () {
         '12_link_preview_720p' => "",
         '12_link_download_480p' => "https://drive.google.com/file/d/1pGjHEuM-pcmQUfm5g7qfq2Fk-BJt6vQ0/view",
         '12_link_download_720p' => "",
-        '12_tanggal' => "",
+        '12_tanggal' => "2025-03-12",
 
         '13_nama' => "Video Imsakiyah 13",
         '13_video_sore' => '',
@@ -513,7 +513,7 @@ Route::get('/', function () {
         '13_link_preview_720p' => "",
         '13_link_download_480p' => "https://drive.google.com/file/d/1wUmf0hqG3n_Dn2Rhp0wxXt3TUNTpJKFI/view",
         '13_link_download_720p' => "",
-        '13_tanggal' => "",
+        '13_tanggal' => "2025-03-13",
 
         '14_nama' => "Video Imsakiyah 14",
         '14_video_sore' => '',
@@ -523,7 +523,7 @@ Route::get('/', function () {
         '14_link_preview_720p' => "",
         '14_link_download_480p' => "https://drive.google.com/file/d/1nlJQDxuZkqwM9Ka-aHcmhRmEB5eV64Wv/view",
         '14_link_download_720p' => "",
-        '14_tanggal' => "",
+        '14_tanggal' => "2025-03-14",
 
         '15_nama' => "Video Imsakiyah 15",
         '15_video_sore' => '',
@@ -533,7 +533,7 @@ Route::get('/', function () {
         '15_link_preview_720p' => "",
         '15_link_download_480p' => "https://drive.google.com/file/d/18O-ibijWO1knc6MeGUh5FDN8GqYM4etf/view",
         '15_link_download_720p' => "",
-        '15_tanggal' => "",
+        '15_tanggal' => "2025-03-15",
 
         '16_nama' => "Video Imsakiyah 16",
         '16_video_sore' => '',
@@ -543,7 +543,7 @@ Route::get('/', function () {
         '16_link_preview_720p' => "",
         '16_link_download_480p' => "",
         '16_link_download_720p' => "",
-        '16_tanggal' => "",
+        '16_tanggal' => "2025-03-16",
 
         '17_nama' => "Video Imsakiyah 17",
         '17_video_sore' => '',
@@ -553,7 +553,7 @@ Route::get('/', function () {
         '17_link_preview_720p' => "",
         '17_link_download_480p' => "",
         '17_link_download_720p' => "",
-        '17_tanggal' => "",
+        '17_tanggal' => "2025-03-17",
 
         '18_nama' => "Video Imsakiyah 18",
         '18_video_sore' => '',
@@ -563,7 +563,7 @@ Route::get('/', function () {
         '18_link_preview_720p' => "",
         '18_link_download_480p' => "",
         '18_link_download_720p' => "",
-        '18_tanggal' => "",
+        '18_tanggal' => "2025-03-18",
 
         '19_nama' => "Video Imsakiyah 19",
         '19_video_sore' => '',
@@ -573,7 +573,7 @@ Route::get('/', function () {
         '19_link_preview_720p' => "",
         '19_link_download_480p' => "",
         '19_link_download_720p' => "",
-        '19_tanggal' => "",
+        '19_tanggal' => "2025-03-19",
 
         '20_nama' => "Video Imsakiyah 20",
         '20_video_sore' => '',
@@ -583,7 +583,7 @@ Route::get('/', function () {
         '20_link_preview_720p' => "",
         '20_link_download_480p' => "",
         '20_link_download_720p' => "",
-        '20_tanggal' => "",
+        '20_tanggal' => "2025-03-20",
 
         '21_nama' => "Video Imsakiyah 21",
         '21_video_sore' => '',
@@ -593,7 +593,7 @@ Route::get('/', function () {
         '21_link_preview_720p' => "",
         '21_link_download_480p' => "",
         '21_link_download_720p' => "",
-        '21_tanggal' => "",
+        '21_tanggal' => "2025-03-21",
 
         '22_nama' => "Video Imsakiyah 22",
         '22_video_sore' => '',
@@ -603,7 +603,7 @@ Route::get('/', function () {
         '22_link_preview_720p' => "",
         '22_link_download_480p' => "",
         '22_link_download_720p' => "",
-        '22_tanggal' => "",
+        '22_tanggal' => "2025-03-22",
 
         '23_nama' => "Video Imsakiyah 23",
         '23_video_sore' => '',
@@ -613,7 +613,7 @@ Route::get('/', function () {
         '23_link_preview_720p' => "",
         '23_link_download_480p' => "",
         '23_link_download_720p' => "",
-        '23_tanggal' => "",
+        '23_tanggal' => "2025-03-23",
 
         '24_nama' => "Video Imsakiyah 24",
         '24_video_sore' => '',
@@ -623,7 +623,7 @@ Route::get('/', function () {
         '24_link_preview_720p' => "",
         '24_link_download_480p' => "",
         '24_link_download_720p' => "",
-        '24_tanggal' => "",
+        '24_tanggal' => "2025-03-24",
 
         '25_nama' => "Video Imsakiyah 25",
         '25_video_sore' => '',
@@ -633,7 +633,7 @@ Route::get('/', function () {
         '25_link_preview_720p' => "",
         '25_link_download_480p' => "",
         '25_link_download_720p' => "",
-        '25_tanggal' => "",
+        '25_tanggal' => "2025-03-25",
 
         '26_nama' => "Video Imsakiyah 26",
         '26_video_sore' => '',
@@ -643,7 +643,7 @@ Route::get('/', function () {
         '26_link_preview_720p' => "",
         '26_link_download_480p' => "",
         '26_link_download_720p' => "",
-        '26_tanggal' => "",
+        '26_tanggal' => "2025-03-26",
 
         '27_nama' => "Video Imsakiyah 27",
         '27_video_sore' => '',
@@ -653,7 +653,7 @@ Route::get('/', function () {
         '27_link_preview_720p' => "",
         '27_link_download_480p' => "",
         '27_link_download_720p' => "",
-        '27_tanggal' => "",
+        '27_tanggal' => "2025-03-27",
 
         '28_nama' => "Video Imsakiyah 28",
         '28_video_sore' => '',
@@ -663,7 +663,7 @@ Route::get('/', function () {
         '28_link_preview_720p' => "",
         '28_link_download_480p' => "",
         '28_link_download_720p' => "",
-        '28_tanggal' => "",
+        '28_tanggal' => "2025-03-28",
 
         '29_nama' => "Video Imsakiyah 29",
         '29_video_sore' => '',
@@ -673,7 +673,7 @@ Route::get('/', function () {
         '29_link_preview_720p' => "",
         '29_link_download_480p' => "",
         '29_link_download_720p' => "",
-        '29_tanggal' => "",
+        '29_tanggal' => "2025-03-29",
 
         '30_nama' => "Video Imsakiyah 30",
         '30_video_sore' => '',
@@ -683,7 +683,7 @@ Route::get('/', function () {
         '30_link_preview_720p' => "",
         '30_link_download_480p' => "",
         '30_link_download_720p' => "",
-        '30_tanggal' => "",
+        '30_tanggal' => "2025-03-30",
 
         'deskripsi' => "Ramadhan adalah bulan suci dalam agama Islam di mana umat muslim berpuasa dari terbit fajar hingga terbenam matahari. Puasa Ramadhan juga menjadi momen untuk meningkatkan ketaqwaan dan memperkuat ikatan dengan Allah SWT. Selain itu, Ramadhan juga merupakan waktu yang tepat untuk berbagi dan saling memberi kepada sesama.\n\nSalah satu hal yang penting dalam menjalankan ibadah puasa Ramadhan adalah mengetahui jadwal imsakiyah. Jadwal imsakiyah adalah jadwal yang menentukan waktu berbuka dan sahur. Berikut kami sediakan Video jadwal imsakiyah untuk Ramadhan tahun 1446 H/2025 M untuk wilayah kabupaten Kudus.\n\n",
 
@@ -1406,7 +1406,7 @@ Route::get('/video-imsakiyah', function () {
         '12_link_preview_720p' => "",
         '12_link_download_480p' => "https://drive.google.com/file/d/1pGjHEuM-pcmQUfm5g7qfq2Fk-BJt6vQ0/view",
         '12_link_download_720p' => "",
-        '12_tanggal' => "",
+        '12_tanggal' => "2025-03-12",
 
         '13_nama' => "Video Imsakiyah 13",
         '13_video_sore' => '',
@@ -1416,7 +1416,7 @@ Route::get('/video-imsakiyah', function () {
         '13_link_preview_720p' => "",
         '13_link_download_480p' => "https://drive.google.com/file/d/1wUmf0hqG3n_Dn2Rhp0wxXt3TUNTpJKFI/view",
         '13_link_download_720p' => "",
-        '13_tanggal' => "",
+        '13_tanggal' => "2025-03-13",
 
         '14_nama' => "Video Imsakiyah 14",
         '14_video_sore' => '',
@@ -1426,7 +1426,7 @@ Route::get('/video-imsakiyah', function () {
         '14_link_preview_720p' => "",
         '14_link_download_480p' => "https://drive.google.com/file/d/1nlJQDxuZkqwM9Ka-aHcmhRmEB5eV64Wv/view",
         '14_link_download_720p' => "",
-        '14_tanggal' => "",
+        '14_tanggal' => "2025-03-14",
 
         '15_nama' => "Video Imsakiyah 15",
         '15_video_sore' => '',
@@ -1436,7 +1436,7 @@ Route::get('/video-imsakiyah', function () {
         '15_link_preview_720p' => "",
         '15_link_download_480p' => "https://drive.google.com/file/d/18O-ibijWO1knc6MeGUh5FDN8GqYM4etf/view",
         '15_link_download_720p' => "",
-        '15_tanggal' => "",
+        '15_tanggal' => "2025-03-15",
 
         '16_nama' => "Video Imsakiyah 16",
         '16_video_sore' => '',
@@ -1446,7 +1446,7 @@ Route::get('/video-imsakiyah', function () {
         '16_link_preview_720p' => "",
         '16_link_download_480p' => "",
         '16_link_download_720p' => "",
-        '16_tanggal' => "",
+        '16_tanggal' => "2025-03-16",
 
         '17_nama' => "Video Imsakiyah 17",
         '17_video_sore' => '',
@@ -1456,7 +1456,7 @@ Route::get('/video-imsakiyah', function () {
         '17_link_preview_720p' => "",
         '17_link_download_480p' => "",
         '17_link_download_720p' => "",
-        '17_tanggal' => "",
+        '17_tanggal' => "2025-03-17",
 
         '18_nama' => "Video Imsakiyah 18",
         '18_video_sore' => '',
@@ -1466,7 +1466,7 @@ Route::get('/video-imsakiyah', function () {
         '18_link_preview_720p' => "",
         '18_link_download_480p' => "",
         '18_link_download_720p' => "",
-        '18_tanggal' => "",
+        '18_tanggal' => "2025-03-18",
 
         '19_nama' => "Video Imsakiyah 19",
         '19_video_sore' => '',
@@ -1476,7 +1476,7 @@ Route::get('/video-imsakiyah', function () {
         '19_link_preview_720p' => "",
         '19_link_download_480p' => "",
         '19_link_download_720p' => "",
-        '19_tanggal' => "",
+        '19_tanggal' => "2025-03-19",
 
         '20_nama' => "Video Imsakiyah 20",
         '20_video_sore' => '',
@@ -1486,7 +1486,7 @@ Route::get('/video-imsakiyah', function () {
         '20_link_preview_720p' => "",
         '20_link_download_480p' => "",
         '20_link_download_720p' => "",
-        '20_tanggal' => "",
+        '20_tanggal' => "2025-03-20",
 
         '21_nama' => "Video Imsakiyah 21",
         '21_video_sore' => '',
@@ -1496,7 +1496,7 @@ Route::get('/video-imsakiyah', function () {
         '21_link_preview_720p' => "",
         '21_link_download_480p' => "",
         '21_link_download_720p' => "",
-        '21_tanggal' => "",
+        '21_tanggal' => "2025-03-21",
 
         '22_nama' => "Video Imsakiyah 22",
         '22_video_sore' => '',
@@ -1506,7 +1506,7 @@ Route::get('/video-imsakiyah', function () {
         '22_link_preview_720p' => "",
         '22_link_download_480p' => "",
         '22_link_download_720p' => "",
-        '22_tanggal' => "",
+        '22_tanggal' => "2025-03-22",
 
         '23_nama' => "Video Imsakiyah 23",
         '23_video_sore' => '',
@@ -1516,7 +1516,7 @@ Route::get('/video-imsakiyah', function () {
         '23_link_preview_720p' => "",
         '23_link_download_480p' => "",
         '23_link_download_720p' => "",
-        '23_tanggal' => "",
+        '23_tanggal' => "2025-03-23",
 
         '24_nama' => "Video Imsakiyah 24",
         '24_video_sore' => '',
@@ -1526,7 +1526,7 @@ Route::get('/video-imsakiyah', function () {
         '24_link_preview_720p' => "",
         '24_link_download_480p' => "",
         '24_link_download_720p' => "",
-        '24_tanggal' => "",
+        '24_tanggal' => "2025-03-24",
 
         '25_nama' => "Video Imsakiyah 25",
         '25_video_sore' => '',
@@ -1536,7 +1536,7 @@ Route::get('/video-imsakiyah', function () {
         '25_link_preview_720p' => "",
         '25_link_download_480p' => "",
         '25_link_download_720p' => "",
-        '25_tanggal' => "",
+        '25_tanggal' => "2025-03-25",
 
         '26_nama' => "Video Imsakiyah 26",
         '26_video_sore' => '',
@@ -1546,7 +1546,7 @@ Route::get('/video-imsakiyah', function () {
         '26_link_preview_720p' => "",
         '26_link_download_480p' => "",
         '26_link_download_720p' => "",
-        '26_tanggal' => "",
+        '26_tanggal' => "2025-03-26",
 
         '27_nama' => "Video Imsakiyah 27",
         '27_video_sore' => '',
@@ -1556,7 +1556,7 @@ Route::get('/video-imsakiyah', function () {
         '27_link_preview_720p' => "",
         '27_link_download_480p' => "",
         '27_link_download_720p' => "",
-        '27_tanggal' => "",
+        '27_tanggal' => "2025-03-27",
 
         '28_nama' => "Video Imsakiyah 28",
         '28_video_sore' => '',
@@ -1566,7 +1566,7 @@ Route::get('/video-imsakiyah', function () {
         '28_link_preview_720p' => "",
         '28_link_download_480p' => "",
         '28_link_download_720p' => "",
-        '28_tanggal' => "",
+        '28_tanggal' => "2025-03-28",
 
         '29_nama' => "Video Imsakiyah 29",
         '29_video_sore' => '',
@@ -1576,7 +1576,7 @@ Route::get('/video-imsakiyah', function () {
         '29_link_preview_720p' => "",
         '29_link_download_480p' => "",
         '29_link_download_720p' => "",
-        '29_tanggal' => "",
+        '29_tanggal' => "2025-03-29",
 
         '30_nama' => "Video Imsakiyah 30",
         '30_video_sore' => '',
@@ -1586,7 +1586,7 @@ Route::get('/video-imsakiyah', function () {
         '30_link_preview_720p' => "",
         '30_link_download_480p' => "",
         '30_link_download_720p' => "",
-        '30_tanggal' => "",
+        '30_tanggal' => "2025-03-30",
 
         'deskripsi' => "Ramadhan adalah bulan suci dalam agama Islam di mana umat muslim berpuasa dari terbit fajar hingga terbenam matahari. Puasa Ramadhan juga menjadi momen untuk meningkatkan ketaqwaan dan memperkuat ikatan dengan Allah SWT. Selain itu, Ramadhan juga merupakan waktu yang tepat untuk berbagi dan saling memberi kepada sesama.\n\nSalah satu hal yang penting dalam menjalankan ibadah puasa Ramadhan adalah mengetahui jadwal imsakiyah. Jadwal imsakiyah adalah jadwal yang menentukan waktu berbuka dan sahur. Berikut kami sediakan Video jadwal imsakiyah untuk Ramadhan tahun 1446 H/2025 M untuk wilayah kabupaten Kudus.\n\n",
 
