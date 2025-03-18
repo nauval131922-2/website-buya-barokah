@@ -235,7 +235,9 @@
                             <h2 style="font-size: 40px;font-weight:bold;">Selamat Datang di <span>Percetakan Buya
                                     Barokah</span></h2>
                             <br>
-                            <p style="font-style: italic; font-weight: 500;">Percetakan Buya Barokah adalah salah satu percetakan terbesar di kudus-jawa tengah, serta perusahaan yang bergerak dibawah naungan Yayasan Arwaniyyah yang melayani berbagai macam
+                            <p style="font-style: italic; font-weight: 500;">Percetakan Buya Barokah adalah salah satu
+                                percetakan terbesar di kudus-jawa tengah, serta perusahaan yang bergerak dibawah naungan
+                                Yayasan Arwaniyyah yang melayani berbagai macam
                                 jenis produk cetak, seperti Brosur, Majalah, Buku, Kalender, Undangan, Kartu Nama, Nota,
                                 dan produk cetak lainnya.</p>
                             <div class="text-center"><a href="javascript:void(0)" class="btn-get-started"
@@ -358,7 +360,8 @@
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
                         <p>
-                            Percetakan Buya Barokah adalah salah satu percetakan terbesar di kudus-jawa tengah, serta perusahaan yang bergerak dibawah naungan Yayasan
+                            Percetakan Buya Barokah adalah salah satu percetakan terbesar di kudus-jawa tengah, serta
+                            perusahaan yang bergerak dibawah naungan Yayasan
                             Arwaniyyah yang melayani berbagai macam jenis produk cetak, seperti Brosur, Majalah, Buku,
                             Kalender, Undangan, Kartu Nama, Nota, dan produk cetak lainnya.
                         </p>
@@ -877,37 +880,51 @@
     </main>
 
     @if (date('Y-m-d') >= '2025-03-01' && date('Y-m-d') <= '2025-03-31')
-        <!-- Modal -->
-        <div id="videoModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-title"
-                    style="
-                text-align: center;
-                margin: 5px 0 15px 0;
-                padding-bottom: 10px;
-                font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-                color: #2c3e50;
-                font-size: 20px;
-                font-weight: 600;
-                border-bottom: 2px solid #f1f1f1;
-                text-shadow: 0 1px 1px rgba(0,0,0,0.1);
-                letter-spacing: 0.5px;">
-                    Video Imsakiyah Hari Ini
-                </div>
-                <span class="close-btn" onclick="closeModal()">&times;</span>
-                <div class="video-container">
-                    @for ($i = 1; $i <= $jumlah_link_preview; $i++)
-                        @if (date('Y-m-d') == $video_imsakiyah->{$i . '_tanggal'})
-                            <iframe id="videoFrame" src="{{ asset($video_imsakiyah->{$i . '_link_preview_480p'}) }}"
-                                allow="autoplay" allowfullscreen></iframe>
-                        @else
-                            @continue
-                        @endif
-                    @endfor
+        @php
+            $hasVideo = false;
+            for ($i = 1; $i <= $jumlah_link_preview; $i++) {
+                if (
+                    date('Y-m-d') == $video_imsakiyah->{$i . '_tanggal'} &&
+                    !empty($video_imsakiyah->{$i . '_link_preview_480p'})
+                ) {
+                    $hasVideo = true;
+                    break;
+                }
+            }
+        @endphp
+
+        @if ($hasVideo)
+            <!-- Modal -->
+            <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-title"
+                        style="
+                    text-align: center;
+                    margin: 5px 0 15px 0;
+                    padding-bottom: 10px;
+                    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+                    color: #2c3e50;
+                    font-size: 20px;
+                    font-weight: 600;
+                    border-bottom: 2px solid #f1f1f1;
+                    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                    letter-spacing: 0.5px;">
+                        Video Imsakiyah Hari Ini
+                    </div>
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <div class="video-container">
+                        @for ($i = 1; $i <= $jumlah_link_preview; $i++)
+                            @if (date('Y-m-d') == $video_imsakiyah->{$i . '_tanggal'} && !empty($video_imsakiyah->{$i . '_link_preview_480p'}))
+                                <iframe id="videoFrame" src="{{ asset($video_imsakiyah->{$i . '_link_preview_480p'}) }}"
+                                    allow="autoplay" allowfullscreen></iframe>
+                            @endif
+                        @endfor
+                    </div>
                 </div>
             </div>
-        </div>
+        @endif
     @endif
+
 
     <script>
         function smoothScroll(target) {
