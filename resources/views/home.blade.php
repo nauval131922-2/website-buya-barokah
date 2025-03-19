@@ -16,68 +16,6 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/az_theme_custom.css') }}" type="text/css" />
 
-    {{-- /* CSS for pop-up video player */ --}}
-    {{-- /* Customize as needed */ --}}
-    <style>
-        .video-popup {
-            display: none;
-            position: fixed;
-            top: 55%;
-            left: 90%;
-            transform: translate(-50%, -50%);
-            z-index: 9999;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        iframe {
-            border-radius: 10px;
-            margin-bottom: -10px;
-        }
-
-        /*  tombol close taruh di pojok kiri atas */
-        .video-popup button {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background: #fff;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-            padding: 5px 10px;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            font-weight: bold;
-            color: #5c5c5c;
-            font-size: 12px;
-        }
-
-        .video-popup button:hover {
-            background-color: #f1f1f1;
-        }
-
-        .video-popup button:focus {
-            outline: none;
-        }
-
-        .video-popup h2 {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        /*  atur untuk tampilan mobile */
-        @media (max-width: 767px) {
-            .video-popup {
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-    </style>
-
     <style>
         /* jika dalam lebar layar laptop */
         @media (min-width: 1086px) {
@@ -204,11 +142,10 @@
         /* Responsive adjustments */
         @media (max-width: 480px) {
             .modal-content {
-                width: 95%;
+                width: 85%;
                 padding: 6px;
                 margin: 8px;
             }
-
             .close-btn {
                 width: 36px;
                 height: 36px;
