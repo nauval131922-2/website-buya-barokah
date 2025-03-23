@@ -897,7 +897,7 @@
 
     <script>
         // Prevent scrolling when modal is open
-        document.body.style.overflow = 'hidden';
+        // document.body.style.overflow = 'hidden';
 
         function closeModal() {
             document.getElementById('videoModal').style.display = 'none';
