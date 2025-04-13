@@ -344,7 +344,7 @@
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
-                                        <span>Pria dan Wanita max usia 27 tahun</span>
+                                        <span>Pria/wanita max usia 30 tahun</span>
                                     </li>
                                     <li class="list">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -352,7 +352,7 @@
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
-                                        <span>Lulusan SMK/SMK semua jurusan</span>
+                                        <span>Pendidikan min. S1 semua jurusan</span>
                                     </li>
                                     <li class="list">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -384,7 +384,7 @@
                                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                                 clip-rule="evenodd"></path>
                                         </svg>
-                                        <span>Kreatif dan energik</span>
+                                        <span>Kreatif dan komunikatif</span>
                                     </li>
                                     <li class="list">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -437,6 +437,140 @@
                             </div>
 
                         </div>
+                        <div class="col-lg-6">
+                            <div class="card ">
+                                <div class="header">
+                                    <span class="title">02. Admin Kalkulasi</span>
+                                </div>
+                                <p class="desc">Kualifikasi</p>
+                                <ul class="lists" style="padding-left: 0px">
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Wanita muslimah max usia 30 tahun</span>
+                                    </li>
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Lulusan SMA/SMK sederajat</span>
+                                    </li>
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Mampu menghitung HPP</span>
+                                    </li>
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Berpengalaman di bidang percetakan</span>
+                                    </li>
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Menganalisa harga jual dan budgeting perusahaan</span>
+                                    </li>
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Mampu bekerjasama secara tim & bekerja di bawah tekanan</span>
+                                    </li>
+                                </ul>
+                                <button class="button-daftar"
+                                    onclick="window.open('https://forms.gle/1xaoipm3VnSMQvbR8', '_blank')">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">Klik di sini untuk mendaftar</span>
+                                    </span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card ">
+                                <div class="header">
+                                    <span class="title">03. Graphic Designer & Creative</span>
+                                </div>
+                                <p class="desc">Kualifikasi</p>
+                                <ul class="lists" style="padding-left: 0px">
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Pria muslim, max usia 25 tahun</span>
+                                    </li>
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Lulusan SMA/SMK sederajat</span>
+                                    </li>
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Menguasai CorelDraw, Photoshop, dan aplikasi editing sejenisnya</span>
+                                    </li>
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Berpengalaman di bidang desain grafis lebih diutamakan</span>
+                                    </li>
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Bisa baca tulis Arabic (nilai plus)</span>
+                                    </li>
+                                    <li class="list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span>Mampu bekerjasama individu maupun tim</span>
+                                    </li>
+                                </ul>
+                                <button class="button-daftar"
+                                    onclick="window.open('https://forms.gle/1xaoipm3VnSMQvbR8', '_blank')">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">Klik di sini untuk mendaftar</span>
+                                    </span>
+                                </button>
+                            </div>
+
+                        </div>
                     </div>
 
                     <div class="row">
@@ -461,6 +595,8 @@
                                             <div class="error-prompt-wrap">
                                                 <li>SETIAP PROSES REKRUTMEN DI PT. BUYA BAROKAH DIV. PERCETAKAN TIDAK
                                                     DIPUNGUT BIAYA APAPUN (GRATIS) !!!</li>
+
+                                                <li>PENDAFTARAN DIBUKA SAMPAI TGL 30 APRIL 2025</li>
                                             </div>
                                         </div>
                                     </div>
